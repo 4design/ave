@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
+     <!-- <link rel="stylesheet" href="css/flexslider.css"> -->
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
@@ -47,7 +48,7 @@
                     <div class="col-sm-8 d-none d-md-block col m-0 p-0">
                         <a title="Enviar correo a reservas@aventurasalsur.com" href="mailto:reservas@aventurasalsur.com">
                             <i class="far fa-envelope"></i> 
-                            <span class="" style="font-family: 'Roboto Condensed', sans-serif; font-size:15px"> reservas@aventurasalsur.com </span> 
+                            <!-- <span class="" style="font-family: 'Roboto Condensed', sans-serif; font-size:15px"> reservas@aventurasalsur.com </span>  -->
                         </a>
                     </div>
                     <div class="col-sm-4 d-none d-md-block col m-0 p-0">
@@ -61,7 +62,7 @@
             <div class="b align-self-end">
             <?php 
             $args = array(
-/*                 'menu_class' => 'nav navbar-nav nav-justified flex-row fles-md-row text-center menu-itemNUE',
+/*               'menu_class' => 'nav navbar-nav nav-justified flex-row fles-md-row text-center menu-itemNUE',
                 'container_id' => 'nav_principal',
                 'container_class' => 'collapse navbar-collapse w-100 justify-content-center justify-content-lg-end text-uppercase',
                 'theme_location' => 'menu_principal' */
@@ -71,10 +72,10 @@
                 'container' => ' ',
                 'container_id' => ' ',
                 'theme_location' => 'menu_principal'                
-            );
+                );
             
-            wp_nav_menu($args);
-        ?>
+                /* wp_nav_menu($args); */
+            ?>
         
                 <!--  <ul class="navbar-nav">
                     <li class="nav-item active">

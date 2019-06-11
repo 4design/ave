@@ -158,15 +158,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="js/creative.js"></script>
     <script src="js/bs-animation.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 
-    <script src="js/albery.js"></script>
+<!--     <script src="js/albery.js"></script>
 	<script>
 		$(".albery-container").albery({
 			speed: 500,
 			imgWidth: 600,
 		});
-	</script>
+	</script> -->
+
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: "thumbnails"
+            });
+        });
+    </script>
 
 </body>
 </html>

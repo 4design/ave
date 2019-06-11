@@ -23,17 +23,43 @@
                 <h1 class="section-heading mt-2 text-center"> <?php the_title(); ?> </h1>
             </div> <!--  titulo -->
 
+<?php 
+    /**
+     * Sample template tag function for outputting a cmb2 file_list
+     *
+     * @param  string  $file_list_meta_key The field meta key. ('wiki_test_file_list')
+     * @param  string  $img_size           Size of image to show
+     */
+    function cmb2_output_file_list( $file_list_meta_key, $img_size = 'mediano-1' ) {
+
+        // Get the list of files
+        $files = get_post_meta( get_the_ID(), $file_list_meta_key, 1 );
+        $img = wp_get_attachment_image($attachment->ID, 'large');
+
+        echo '<div class="file-list-wrap">';
+        // Loop through them and output an image
+        foreach ( (array) $files as $attachment_id => $attachment_url ) {
+            
+           echo '<div class="file-list-image">';
+           echo wp_get_attachment_image( $attachment_id, $img_size );
+           echo '</div>';
+        }
+        echo '</div>';
+    }
+?>
+
             <div class="row w-100 justify-content-between">
                 <div class="col-md-8">
                         <div class="containercc">
 
-                                <div class="albery-container">
+                                <div class="">
                         
-                                    <div class="albery-wrapper">
+                                    <div class="">
                         
-                                        <div class="albery-item">
-                                            <?php echo get_post_meta( get_the_ID(), 'title_tours_imagenes_filelist', true ); ?>
-                                            <?php the_post_thumbnail('mediano-1') ?>
+                                        <div class="">
+                                            <?php cmb2_output_file_list( 'title_tours_imagenes_filelist', 'mediano-1' ); ?>
+                                            <!-- <?php echo get_post_meta( get_the_ID(), 'title_tours_imagenes_filelist', true ); ?>
+                                            <?php the_post_thumbnail('mediano-1') ?> -->
                                         </div>
                         
                                     </div>

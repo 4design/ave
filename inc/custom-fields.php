@@ -234,7 +234,7 @@ function ave_campos_tours() {
 		//'id'   => 'wiki_test_file_list',
 		'id'   => 'title_tours_imagenes_filelist',
 		'type' => 'file_list',
-		// 'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
+		//'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
 		// 'query_args' => array( 'type' => 'image' ), // Only images attachment
 		// Optional, override default text strings
 		'text' => array(
