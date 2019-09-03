@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title> Aventuras al Sur </title>
+<title> Avr </title>
 
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
@@ -20,9 +20,9 @@
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
-    <meta property="og:title" content="Viaje por PERU - Aventuras al Sur" />
+    <meta property="og:title" content="Viaje por PERU - AvenSur" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.aventurasalsur.com/" />
+    <meta property="og:url" content="https://www.acom/" />
     <meta property="og:description" content="Explore Peru and all the country with one of our exciting packages today." />
 
     <?php wp_head(); ?>
@@ -55,7 +55,7 @@
                             <a title="Contactar a través de Whatsapp" href="https://api.whatsapp.com/send?phone=511989166527&amp;text=%C2%A1Hola%21%20Estoy%20interesado%20en%20un%20tour"
                                 target="_blank">
                                 <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:20px"></i> 
-                                <span class="" style="font-family: 'Roboto Condensed', sans-serif; font-size:18px"> +51989166527 </span>
+                                <span class="" style="font-family: 'Roboto Condensed', sans-serif; font-size:18px"> +5199999999 </span>
                             </a>
                     </div>
             </div>

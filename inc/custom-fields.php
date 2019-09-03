@@ -245,4 +245,7 @@ function ave_campos_tours() {
 			'remove_text' => 'Replacement', // default: "Remove"
 		),
 	) );
+
+	// prueba
+	
 }

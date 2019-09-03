@@ -80,12 +80,10 @@
                         </div>
                 </div> <!-- carousel -->
  
-                <div class="col-md-4" style="background-color:orange;">
-                    
-                    <!-- box precio -->
-                    <div class=" " style="background-color:SALMON;">
+                <div class="col-md-4">
+                    <div class=" ">
                         <div class="price-block has-price">
-                            <div class="px-2 activity-features-price top-border-highlight">
+                            <div class="activity-features-price top-border-highlight">
 
                                 <?php
                                     $costo = get_post_meta(get_the_ID(), 'ave_tours_precio_money_adulto', true); 
@@ -97,36 +95,8 @@
                                     </strong>
                                     <span class="price-explanation">por persona</span>
                                 </p>
-                                <div class="priceBook col-md-12 btn btn-primary"> 
-                                    <a class="text-light" href="#">  Book now   </a> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex">    
-
-                        <a class="mx-auto navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/credit-cards.png" class="img-fluid">
-                        </a>
-
-                        </div>
-                    </div> 
-                    <!-- box form -->
-                    <div class=" " style="background-color:DEEPPINK;">
-                        <div class="price-block has-price">
-                            <div class="px-2 activity-features-price top-border-highlight">
-
-                                <?php
-                                    $costo = get_post_meta(get_the_ID(), 'ave_tours_precio_money_adulto', true); 
-                                ?> 
-                                <p class="price"> 
-                                    <span class="price-from">desde</span> 
-                                    <strong class="price-actual">US 
-                                        <?php echo asDollars($costo); ?>
-                                    </strong>
-                                    <span class="price-explanation">por persona</span>
-                                </p>
-                                <div class="priceBook col-md-12 btn btn-primary"> 
-                                    <a class="text-light" href="#">  Book now   </a> 
+                                <div class="priceBook px-2 col-md-12 btn btn-primary"> 
+                                    <a class="text-light" href="#">    Book now   </a> 
                                 </div>
                             </div>
                         </div>
@@ -134,7 +104,6 @@
                             <img class="img-fluid" src="images/credit-cards.png" alt="">
                         </div>
                     </div>
-
                 </div> <!-- botones -->
             </div> <!--  carrousel + botones -->
 

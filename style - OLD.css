@@ -307,7 +307,7 @@ p.parrafo {
 
 .price-block {
     text-align: right;
-    margin-bottom: 2px;
+    margin-bottom: 16px;
 }
 .price-block.has-price {
     border: solid #c6c8d0;
@@ -402,7 +402,10 @@ footer.footer {
     background-color: #f8f9fa!important;
 }
 
-
+.list-inline, .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
 
 /** mediaqueries **/
 
@@ -526,45 +529,7 @@ section#tours #tours-block h2 span, section#tours #tours-block h1 span {
     font-size: 2.4rem;
 }
 
-/** footer REV **/
-
-.dk-footer {
-    padding: 5px 0 0;
-    position: relative;
-    z-index: 2; }
-
-.phone .tit {
-    padding: 0 0 0 0px;
-    line-height: 1em;
-}
-.phoneContainer{
-    font-family: "Roboto Condensed";
-    font-size: 2.4rem;
-}
-.footer-social-link h3, .section-heading h3{
-    font-family: "Roboto Condensed";
-    font-size: 1.4rem;
-}
-.footer-info-text {
-    margin: 26px 0 32px; }
-
-.dk-footer-box-info .footer-social-link ul, .list-inline ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; }   
-.dk-footer-box-info .footer-social-link li{
-    display: inline-block; }
-
-.list-inline li{
-        display: block; }
-    
-    
-    /** footer OLD **/
-    
-.list-inline, .list-unstyled {
-    padding-left: 0;
-    list-style: none;
-}
+/** footer **/
 
 footer#foot-data #info-row span {
     margin: 0;
