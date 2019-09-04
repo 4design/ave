@@ -80,10 +80,10 @@
                         </div>
                 </div> <!-- carousel -->
  
-                <div class="col-md-4" style="background-color:orange;">
+                <div class="col-md-4">
                     
                     <!-- box precio -->
-                    <div class=" " style="background-color:SALMON;">
+                    <div class="">
                         <div class="price-block has-price">
                             <div class="px-2 activity-features-price top-border-highlight">
 
@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex">    
+                        <div class="d-flex bg-white">    
 
                         <a class="mx-auto navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/credit-cards.png" class="img-fluid">
@@ -111,48 +111,35 @@
                         </div>
                     </div> 
                     <!-- box form -->
-                    <div class=" " style="background-color:DEEPPINK;">
+                    <div class="">
                         <div class="price-block has-price">
-                            <div class="px-2 activity-features-price top-border-highlight">
+                            <div class="px-2 activity-features-price">
 
-                                <div class="priceBook col-md-12 btn btn-primary"> 
+                                <div class="priceBook col-md-12 btn btn-primary" data-toggle="modal" data-target="#ave_Modal"> 
                                     <a class="text-light" href="#">  Enquire now  </a> 
                                 </div>
 
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="ave_Modal" tabindex="-1" role="dialog" aria-labelledby="ave_ModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="ave_ModalLabel">  Enquire now </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        
+        <?php echo do_shortcode( '[contact-form-7 id="153" title="Formulario de contacto 1"]' ); ?>
+        
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+
     </div>
   </div>
 </div>
-
-
-
-                            <!-- Prueba -->
-
-                            <?php echo do_shortcode( '[contact-form-7 id="153" title="Formulario de contacto 1"]' ); ?>
-
-                            <!-- Prueba -->
 
                             </div>
                         </div>
