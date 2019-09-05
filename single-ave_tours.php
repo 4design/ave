@@ -82,9 +82,9 @@
  
                 <div class="col-md-4">
                     
-                    <!-- box precio -->
-                    <div class="">
-                        <div class="price-block has-price">
+                    <!-- inicio box precio -->
+                    <div class="" style="outline:0px solid DEEPPINK;">
+                        <div class="price-block has-price" style="outline:0px solid AQUA;">
                             <div class="px-2 activity-features-price top-border-highlight">
 
                                 <?php
@@ -100,51 +100,52 @@
                                 <div class="priceBook col-md-12 btn btn-primary"> 
                                     <a class="text-light" href="#">  Book now   </a> 
                                 </div>
-                            </div>
-                        </div>
-                        <div class="d-flex bg-white">    
 
-                        <a class="mx-auto navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/credit-cards.png" class="img-fluid">
-                        </a>
+                            <!-- inicio box cards -->
+                                <div class="d-flex w-100 bg-white">    
+                                    <a class="d-flex mx-auto navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
+                                        <img class="mt-3" src="<?php echo get_template_directory_uri(); ?>/img/credit-cards.png" class="img-fluid">
+                                    </a>
+                                </div>
+                            <!-- fin box cards -->
 
-                        </div>
-                    </div> 
-                    <!-- box form -->
-                    <div class="">
-                        <div class="price-block has-price">
-                            <div class="px-2 activity-features-price">
-
-                                <div class="priceBook col-md-12 btn btn-primary" data-toggle="modal" data-target="#ave_Modal"> 
+                            <!-- inicio box form -->
+                                <div class="mt-3 col-md-12 btn btn-primary" data-toggle="modal" data-target="#ave_Modal"> 
                                     <a class="text-light" href="#">  Enquire now  </a> 
                                 </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="ave_Modal" tabindex="-1" role="dialog" aria-labelledby="ave_ModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title" id="ave_ModalLabel">  Enquire now </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-        <?php echo do_shortcode( '[contact-form-7 id="153" title="Formulario de contacto 1"]' ); ?>
-        
-      </div>
-
-    </div>
-  </div>
-</div>
+                            <!-- fin box form -->
 
                             </div>
+
                         </div>
- 
-                    </div>
+
+                    </div> 
+                    <!-- fin box precio -->
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="ave_Modal" tabindex="-1" role="dialog" aria-labelledby="ave_ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ave_ModalLabel">  Enquire now </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <?php echo do_shortcode( '[contact-form-7 id="153" title="Formulario de contacto 1"]' ); ?>
+                                    
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+
 
                 </div> <!-- botones -->
             </div> <!--  carrousel + botones -->
