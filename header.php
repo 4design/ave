@@ -33,25 +33,31 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container justify-content-between">
+
+        <!-- inicio logo superior -->
         <div class="">
             <a class="navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-fluid">
             </a>
         </div>
+        <!-- fin logo superior -->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- inicio MENUS superior -->
         <div class="collapse navbar-collapse flex-column" id="navbarNav">
-            <div class="nav-ave d-inline-flex align-self-end">
-                    <div class="col-sm-8 d-none d-md-block col m-0 p-0">
+
+            <!-- inicio subMenu superior -->
+            <div class="nav-ave d-inline-flex align-self-end" style="outline:5px solid BROWN;">
+                    <div class="col-sm-8 d-none d-md-block col m-0 p-0" style="outline:2px solid MEDIUMSLATEBLUE;">
                         <a title="Enviar correo a reservas@aventurasalsur.com" href="mailto:reservas@aventurasalsur.com">
                             <i class="far fa-envelope"></i> 
                             <!-- <span class="" style="font-family: 'Roboto Condensed', sans-serif; font-size:15px"> reservas@aventurasalsur.com </span>  -->
                         </a>
                     </div>
-                    <div class="col-sm-4 d-none d-md-block col m-0 p-0">
+                    <div class="col-sm-4 d-none d-md-block col m-0 p-0" style="outline:2px solid DARKTURQUOISE;">
                             <a title="Contactar a través de Whatsapp" href="https://api.whatsapp.com/send?phone=511989166527&amp;text=%C2%A1Hola%21%20Estoy%20interesado%20en%20un%20tour"
                                 target="_blank">
                                 <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:20px"></i> 
@@ -59,43 +65,21 @@
                             </a>
                     </div>
             </div>
-            <div class="b align-self-end">
-            <?php 
-            $args = array(
-/*               'menu_class' => 'nav navbar-nav nav-justified flex-row fles-md-row text-center menu-itemNUE',
-                'container_id' => 'nav_principal',
-                'container_class' => 'collapse navbar-collapse w-100 justify-content-center justify-content-lg-end text-uppercase',
-                'theme_location' => 'menu_principal' */
-
-                'menu_id' => ' ',
-                'menu_class' => 'navbar-nav navbar-expand-lg',
-                'container' => ' ',
-                'container_id' => ' ',
-                'theme_location' => 'menu_principal'                
-                );
+            <!-- fin subMenu superior -->
             
-                /* wp_nav_menu($args); */
-            ?>
+            <!-- inicio Menu superior -->
+            <div class="b align-self-end" style="outline:5px solid LIME;">
+            
+            <!-- ini php -->
+            <!-- fin php -->
         
-                <!--  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Tours">Tours</a></li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Blog">Blog</a></li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Galería">Galería</a></li>
-                    </li>
-                    <li class="nav-item cotizar bg bg-primary">
-                        <a class="nav-link text-light" href="#cotizar">Cotizar</a></li>
-                    </li>            
-                </ul> -->
+            mmmmmmmmm
+
             </div>
+            <!-- fin Menu superior -->
+
         </div>
+        <!-- fin MENUS superior -->
 
     </div>
 </nav>    <!-- navs -->
