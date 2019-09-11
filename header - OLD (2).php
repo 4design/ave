@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
      <!-- <link rel="stylesheet" href="css/flexslider.css"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
     <meta property="og:title" content="Viaje por PERU - AvenSur" />
@@ -42,21 +42,23 @@
             <div class="header__content-wrap" style="outline:2px solid DARKTURQUOISE">
                 <div class="header__content">
                     <div class="row">
-                    <div class="col-md-12">
-                        <div class="header__utils text-right">
+                    <div class="col-md-12" style="background-color:ORANGERED;">
+                        <div class="header__utils" style="outline:2px solid SALMON; background-color:FUCHSIA;">
                         
                         <!-- inicio Idioma -->
                             <div class="header__info__item header__info__item--delimiter header__info__item--widget">
                                 <div class="lang_sel_list_horizontal wpml-ls-sidebars-top_bar_right wpml-ls wpml-ls-legacy-list-horizontal"
                                     id="lang_sel_list">
                                     <ul>
-                                        <li class="icl-en wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item">
-                                            <a href="#" class="wpml-ls-link">
-                                            <span class="wpml-ls-native icl_lang_sel_native">EN</span></a>
+                                        <li
+                                            class="icl-en wpml-ls-slot-top_bar_right wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
+                                            <a href="https://www.aracari.com" class="wpml-ls-link"><span
+                                                    class="wpml-ls-native icl_lang_sel_native">EN</span></a>
                                         </li>
-                                        <li class="icl-en wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item">
-                                            <a href="#" class="wpml-ls-link">
-                                            <span class="wpml-ls-native icl_lang_sel_native">SP</span></a>
+                                        <li
+                                            class="icl-es wpml-ls-slot-top_bar_right wpml-ls-item wpml-ls-item-es wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+                                            <a href="https://www.aracari.com/es/" class="wpml-ls-link"><span
+                                                    class="wpml-ls-native icl_lang_sel_native">SP</span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -81,25 +83,20 @@
                         <!-- fin Busqueda -->
                         <!-- inicio Whatsapp -->
                             <div class="header__info__menu header__info__item--delimiter">
-
                                 <ul id="top-menu" class="top-nav">
-                                    <li id="menu-item-32434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32434">
-                                        <span class="h-icon wpml-ls-native icl_lang_sel_native">
-                                            <i class="fab fa-whatsapp"></i> </span>
-                                        <a href="tel:+511993502909" class="wpml-ls-link">
-                                            <span class="wpml-ls-native icl_lang_sel_native"> +51 999 299 299 </span> </a>
-                                    </li>
-
+                                    <li id="menu-item-32434"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32434"><a
+                                            href="https://www.aracari.com/contact-us/">Contact Us</a></li>
                                 </ul>
                             </div>
                         <!-- fin Whatsapp -->
-
+                        
                         </div>
 
                     </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="outline:2px solid RED">
                             <div class="logo logo--image" style="outline:2px solid blue">
                             <!-- inicio logo superior -->
                             
@@ -110,13 +107,7 @@
                             </div>
                             <nav class="main-nav-header w-100" role="navigation" style="outline:2px solid SPRINGGREEN">
                                 <!-- ini uberMenu php -->
-                                <nav id="navigation">
-                                    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-                                    </nav>
-
-                                <?php ubermenu( 'main' , array( 'theme_location' => 'menu_principal' ) ); ?>
-                                <?php ubermenu( 'main' , array( 'theme_location' => 'menu_principal' ) ); ?>          
-                                <!-- fin uberMenu php -->
+                                <?php ubermenu( 'main' , array( 'theme_location' => 'menu_principal' ) ); ?>          <!-- fin uberMenu php -->
                             </nav>
                         </div>
                     </div>

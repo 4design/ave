@@ -176,6 +176,9 @@ hr {
     font-size: 1rem !important;
     color: #888;
 }
+.svg-inline--fa.fa-w-10 {
+    width: 1.625em;
+}
 
 /* header PreCambios*/
 
@@ -207,7 +210,7 @@ hr {
 .logo a{
     display: block; 
     color: #fff;
-    font-family: 'Dry-Brush';
+    /* font-family: 'Dry-Brush'; */
     font-size: 1.267em;
     color: #334960;
     border: none; 
@@ -297,35 +300,61 @@ hr {
     display: inline-block;
 }
 .header__info__menu .top-nav {
+    font-family: "Roboto Condensed";
     line-height: 26px;
     margin: 0;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     list-style: none;
     display: block;
     padding: 0;
     float: left;
 }
+span.h-icon{
+    font-size: 1rem;
+    color: #888;
+}
 .header__info__menu .top-nav a:link, .header__info__menu .top-nav a:visited {
     padding-left: 1px;
-    color: #1a2e3c;
-    opacity: 0.6;
+    text-decoration: none;
+    /* color: #1a2e3c; */
+    opacity: 0.7;
     line-height: 14px;
     text-transform: uppercase;
 }
+.header__info__menu .top-nav a:active,
+.header__info__menu .top-nav a:hover {
+    opacity: 1;
+}
+.header__info__menu.header__info__item--delimiter .top-nav:before{
+    content: " ";
+    display: block;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    background: #1a2e3c;
+    opacity: 0.3;
+    top: 4px;
+    height: 18px;
+    margin-left: -20px;
+}
+
+.header__info__item--delimiter {
+    position: relative;
+}
 .header__utils a {
+    font-family: "Roboto Condensed";
+    font-size: 1rem !important;
+    color: #888;
     border: none;
 }
 .header__utils .header__info__item {
     float: left;
-    margin: 0 20px 0 0;
+    margin: 0 5px 0 0;
     line-height: 14px;
     padding-top: 4px;
-}
-.header__info__item--delimiter {
-    position: relative;
 }
 .header__utils .header__info__item--delimiter + .header__info__item--delimiter:before {
     background: #1a2e3c;
@@ -333,7 +362,6 @@ hr {
     top: 4px;
     height: 18px;
 }
-
 .header__utils .header__info__item a:link, .header__utils .header__info__item a:visited {
     padding-left: 1px;
     color: #1a2e3c;
@@ -352,7 +380,7 @@ hr {
 .wpml-ls-legacy-list-horizontal a {
     display: block;
     text-decoration: none;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     line-height: 1;
 }
 .wpml-ls-legacy-list-horizontal>ul {
