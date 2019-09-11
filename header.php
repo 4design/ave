@@ -31,55 +31,82 @@
 
 <body <?php body_class(); ?> id="page-top" class="index">
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <div class="container justify-content-between">
 
-        <!-- inicio logo superior -->
-        <div class="">
-            <a class="navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-fluid">
-            </a>
-        </div>
-        <!-- fin logo superior -->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- inicio header -->
+<div class="header-wrap">   
 
-        <!-- inicio MENUS superior -->
-        <div class="collapse navbar-collapse flex-column" id="navbarNav">
+    <header class="header" role="banner">
 
-            <!-- inicio subMenu superior -->
-            <div class="nav-ave d-inline-flex align-self-end" style="outline:5px solid BROWN;">
-                    <div class="col-sm-8 d-none d-md-block col m-0 p-0" style="outline:2px solid MEDIUMSLATEBLUE;">
-                        <a title="Enviar correo a reservas@aventurasalsur.com" href="mailto:reservas@aventurasalsur.com">
-                            <i class="far fa-envelope"></i> 
-                            <!-- <span class="" style="font-family: 'Roboto Condensed', sans-serif; font-size:15px"> reservas@aventurasalsur.com </span>  -->
-                        </a>
+    <div class="container">
+            <div class="header__content-wrap" style="outline:2px solid DARKTURQUOISE">
+                <div class="header__content">
+                    <div class="row">
+                    <div class="col-md-12" style="outline:2px solid SALMON">
+                        <div class="header__utils">
+                            <div class="header__info__item header__info__item--delimiter header__info__item--widget">
+                                <div class="lang_sel_list_horizontal wpml-ls-sidebars-top_bar_right wpml-ls wpml-ls-legacy-list-horizontal"
+                                    id="lang_sel_list">
+                                    <ul>
+                                        <li
+                                            class="icl-en wpml-ls-slot-top_bar_right wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
+                                            <a href="https://www.aracari.com" class="wpml-ls-link"><span
+                                                    class="wpml-ls-native icl_lang_sel_native">EN</span></a>
+                                        </li>
+                                        <li
+                                            class="icl-es wpml-ls-slot-top_bar_right wpml-ls-item wpml-ls-item-es wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+                                            <a href="https://www.aracari.com/es/" class="wpml-ls-link"><span
+                                                    class="wpml-ls-native icl_lang_sel_native">SP</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__info__item header__info__item--delimiter header__info__item--search"><a
+                                    href="#search-form-header" class="popup-search-form" data-effect="mfp-zoom-in"><i
+                                        class="fa fa-search"></i></a></div>
+
+                            <div id="search-form-header" class="search-form-popup mfp-with-anim mfp-hide search-form-popup--hide">
+                                <form role="search" method="get" class="search-form" action="https://www.aracari.com/">
+                                    <label>
+                                        <span class="screen-reader-text">Search for:</span>
+                                        <input type="search" class="search-field" placeholder="Type in your request..." value="" name="s">
+                                    </label>
+                                    <input type="submit" class="search-submit" value="Search">
+                                </form>
+                            </div>
+                            <div class="header__info__menu header__info__item--delimiter">
+                                <ul id="top-menu" class="top-nav">
+                                    <li id="menu-item-32434"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32434"><a
+                                            href="https://www.aracari.com/contact-us/">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-4 d-none d-md-block col m-0 p-0" style="outline:2px solid DARKTURQUOISE;">
-                            <a title="Contactar a través de Whatsapp" href="https://api.whatsapp.com/send?phone=511989166527&amp;text=%C2%A1Hola%21%20Estoy%20interesado%20en%20un%20tour"
-                                target="_blank">
-                                <i class="fab fa-whatsapp" aria-hidden="true" style="font-size:20px"></i> 
-                                <span class="" style="font-family: 'Roboto Condensed', sans-serif; font-size:18px"> +5199999999 </span>
-                            </a>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12" style="outline:2px solid RED">
+                            <div class="logo logo--image" style="outline:2px solid blue">
+                            <!-- inicio logo superior -->
+                            
+                                <a id="logoLink" style="outline:2px solid DEEPSKYBLUE" class="_navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
+                                    <img style="outline:2px solid MEDIUMSLATEBLUE" id="normalImageLogo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-fluid">
+                                </a>                            
+                            <!-- fin logo superior -->
+                            </div>
+                            <nav class="main-nav-header w-100" role="navigation" style="outline:2px solid SPRINGGREEN">
+                                <!-- ini uberMenu php -->
+                                <?php ubermenu( 'main' , array( 'theme_location' => 'menu_principal' ) ); ?>          <!-- fin uberMenu php -->
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div> 
+                </div>
             </div>
-            <!-- fin subMenu superior -->
-            
-            <!-- inicio Menu superior -->
-            <div class="b align-self-end" style="outline:5px solid LIME;">
-            
-            <!-- ini php -->
-            <!-- fin php -->
-        
-            mmmmmmmmm
-
-            </div>
-            <!-- fin Menu superior -->
-
-        </div>
-        <!-- fin MENUS superior -->
-
     </div>
-</nav>    <!-- navs -->
+
+    </header>
+
+</div>
+
+<!-- fin header -->

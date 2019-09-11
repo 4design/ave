@@ -169,8 +169,240 @@ hr {
     border-radius: 0rem;
 }
 
+/* menu ubermenu */
 
-/* nav */
+.ubermenu-skin-vanilla {
+    font-family: "Roboto Condensed";
+    font-size: 1rem !important;
+    color: #888;
+}
+
+/* header PreCambios*/
+
+.header {
+    color: #334960;
+    background: #fff;
+    /* border-bottom: 1px solid #bcdee9; */
+}
+
+.h-wrap {
+    min-height: 86px;
+}
+
+/* header aracari */
+
+.header {
+    color: #334960;
+    background: #fff;
+    /* border-bottom: 1px solid #bcdee9; */
+}
+.logo.logo--image {
+    position: absolute;
+    margin-top: -35px;
+    z-index: 10;
+}
+.logo {
+    float: left; 
+}
+.logo a{
+    display: block; 
+    color: #fff;
+    font-family: 'Dry-Brush';
+    font-size: 1.267em;
+    color: #334960;
+    border: none; 
+    }
+
+#logoLink img {
+    max-height: 60px;
+    max-width: 200px;
+    padding-top: 1px;
+}
+
+.header-wrap {
+    min-height: 86px;
+}
+
+.header-wrap--sticky-header .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header-wrap--sticky-header .header__content {
+    min-height: 0;
+    line-height: 86px;
+}
+
+.header__content {
+    min-height: 86px;
+    line-height: 86px;
+}
+.header__utils {
+    height: 36px;
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+    width: auto;
+    float: right;
+    color: #c59250;
+    padding-top: 6px;
+}
+.header__info {
+    overflow: hidden;
+    position: relative;
+}
+
+.header__info:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0.1;
+}
+
+.header__info__items-left {
+    float: left;
+}
+
+.header__info__items-right {
+    float: right;
+}
+
+.header__info__item {
+    display: inline-block;
+    margin: 5px 0;
+    padding-left: 1px;
+    font-size: 0.933em;
+    line-height: 35px;
+}
+
+.header__info__item {
+    display: inline-block;
+    margin: 5px 0;
+    padding-left: 1px;
+    font-size: 0.933em;
+    line-height: 35px;
+}
+.header__info__menu {
+    float: left;
+    margin-left: 40px;
+}
+.header__info__menu ul li {
+    display: inline-block;
+}
+.header__info__menu .top-nav {
+    line-height: 26px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    list-style: none;
+    display: block;
+    padding: 0;
+    float: left;
+}
+.header__info__menu .top-nav a:link, .header__info__menu .top-nav a:visited {
+    padding-left: 1px;
+    color: #1a2e3c;
+    opacity: 0.6;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+.header__utils a {
+    border: none;
+}
+.header__utils .header__info__item {
+    float: left;
+    margin: 0 20px 0 0;
+    line-height: 14px;
+    padding-top: 4px;
+}
+.header__info__item--delimiter {
+    position: relative;
+}
+.header__utils .header__info__item--delimiter + .header__info__item--delimiter:before {
+    background: #1a2e3c;
+    opacity: 0.3;
+    top: 4px;
+    height: 18px;
+}
+
+.header__utils .header__info__item a:link, .header__utils .header__info__item a:visited {
+    padding-left: 1px;
+    color: #1a2e3c;
+    opacity: 0.6;
+    line-height: 14px;
+    border: none;
+}
+.wpml-ls-sidebars-top_bar_right {
+    padding: 0;
+}
+.wpml-ls-legacy-list-horizontal {
+    border: 1px solid transparent;
+    /* padding: 7px; */
+    clear: both;
+}
+.wpml-ls-legacy-list-horizontal a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    line-height: 1;
+}
+.wpml-ls-legacy-list-horizontal>ul {
+    padding: 0;
+    margin: 0 !important;
+    list-style-type: none;
+}
+.wpml-ls-legacy-list-horizontal .wpml-ls-item {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+.wpml-ls-slot-top_bar_right.wpml-ls-current-language a span {
+    font-weight: 300;
+}
+.wpml-ls-slot-top_bar_right a span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.wpml-ls-legacy-list-horizontal a span {
+    vertical-align: middle;
+}
+.wpml-ls-sidebars-top_bar_right .wpml-ls-item + .wpml-ls-item {
+    padding-left: 10px;
+}
+.wpml-ls-slot-top_bar_right a {
+    padding: 0;
+}
+a.wpml-ls-link {
+    opacity: 1;
+}
+.header__utils a {
+    border: none;
+}
+.header__info__item a {
+    padding-left: 1px;
+    color: #fff;
+    opacity: 0.5;
+}
+.main-nav-header {
+    /* margin-top: 40px;  */ /*spacio del menu*/
+    font-family: 'Roboto';
+    float: right;
+}
+
+
+/* nav OLD*/
 .nav-ave{
     width: 400px!important;
 }
