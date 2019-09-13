@@ -10,7 +10,9 @@
 <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
@@ -18,49 +20,45 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js?ver=3.7.0" type="text/javascript"></script>
 <![endif]-->
-<?php wp_head(); ?>
+<?php wp_head();?>
 </head>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
+<body <?php /*body_class();*/ ?>>
+<?php /*wp_body_open();*/ ?>
 
 
-<?php if( function_exists( 'ubermenu' ) ): ?>
-    <?php ubermenu( 'main' , array( 'theme_location' => 'menu_principal' ) ); ?>
-    <?php /*wp_nav_menu( array( 'theme_location' => 'menu_principal' ) );*/ ?> 
-<?php else: ?>
 
-<div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
-		<hgroup>
-            <h1 class="site-title"><a href="
-                <?php echo esc_url( home_url( '/' ) ); ?>" title="
-                <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                <?php bloginfo( 'name' ); ?></a>
-            </h1>
-			<h2 class="site-description">
-                <?php bloginfo( 'description' ); ?></h2>
-        </hgroup>  
-        <?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
-      </header>
-   </div>
-<?php endif; ?>
+
+
+    <?php if( function_exists( 'ubermenu' ) ): ?>
+        
+        <div>
+            <h2> ALGO ALGO ALGO ALGO  # IF</h2>    
+            <?php ubermenu( 'main' , array( 'theme_location' => 'menu_principal' ) ); ?>
+        </div>
+
+    <?php else: ?>
+    <div class="" style="background-color:DARKRED; outline:1px solid GREEN;">
+        <div>
+            <?php wp_nav_menu( array(
+                        'menu'           => 'menu_principal', // Do not fall back to first non-empty menu.
+                        'theme_location' => 'menu_principal',
+                        'fallback_cb'    => false // Do not fall back to wp_page_menu()
+                ) );
+            ?>
+        </div>
+    <?php endif; ?>
+
+</div>
+
+
 
 
 <!-- -->
 
+<!-- -->
 
 
-		<?php if ( get_header_image() ) : ?>
-    <a href="
-        <?php echo esc_url( home_url( '/' ) ); ?>"><img src="
-        <?php header_image(); ?>" class="header-image" width="
-        <?php echo esc_attr( get_custom_header()->width ); ?>" height="
-        <?php echo esc_attr( get_custom_header()->height ); ?>" alt="
-        <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
-    </a>
-        <?php endif; ?>
-        
-	</header><!-- #masthead -->
+<div id="page" class="hfeed site">
 
 	<div id="main" class="wrapper">
