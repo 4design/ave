@@ -10,19 +10,32 @@
 
     <div class="container my-auto">
         <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="slider" style="
+            background: transparent; 
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;">
+ 
+            <?php add_revslider('ave-frontpage','homepage'); ?>
+
+            </div>
+
+<!--             <div class="col-lg-10 mx-auto">
                 <h1 class="text-uppercase"><strong>
-                <?php echo get_post_meta( get_the_ID(), 'ave_home_text_superior_1', true ); ?>
+                <?php /*echo get_post_meta( get_the_ID(), 'ave_home_text_superior_1', true );*/ ?>
                 </strong></h1>
                 <hr>
-            </div>
+            </div> -->
         </div>
-        <div class="col-lg-8 mx-auto">
+<!--         <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5"> 
-            <?php echo get_post_meta( get_the_ID(), 'ave_home_text_inferior_1', true ); ?>
+            <?php /* echo get_post_meta( get_the_ID(), 'ave_home_text_inferior_1', true );*/ ?>
             </p>
 
-              <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="nazca-increible.html">Más información</a></div>
+              <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="nazca-increible.html">Más información</a>
+        </div> -->
     </div>
 </header> <!-- masthead -->
 

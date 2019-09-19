@@ -51,7 +51,7 @@ h1 > strong{
 }
 #mainNav {
     border-bottom: 1px solid rgba(33,37,41,.1);
-    background-color: #fff;
+    /* background-color: #fff; */
     transition: all .2s;
 }
 
@@ -180,24 +180,13 @@ hr {
     width: 1.625em;
 }
 
-/* header PreCambios*/
-
-.header {
-    color: #334960;
-    background: #fff;
-    /* border-bottom: 1px solid #bcdee9; */
-}
-
-.h-wrap {
-    min-height: 86px;
-}
 
 /* header aracari */
 
 .header {
-    color: #334960;
-    background: #fff;
-    /* border-bottom: 1px solid #bcdee9; */
+    color: #888;
+    background:  #FF5A5F;
+    border-bottom: 2px solid #fff;
 }
 .logo.logo--image {
     position: absolute;
@@ -314,7 +303,7 @@ hr {
 }
 span.h-icon{
     font-size: 1rem;
-    color: #888;
+    color: #fff;
 }
 .header__info__menu .top-nav a:link, .header__info__menu .top-nav a:visited {
     padding-left: 1px;
@@ -334,7 +323,7 @@ span.h-icon{
     width: 1px;
     position: absolute;
     left: 0;
-    background: #1a2e3c;
+    background: #fff;
     opacity: 0.3;
     top: 4px;
     height: 18px;
@@ -347,7 +336,7 @@ span.h-icon{
 .header__utils a {
     font-family: "Roboto Condensed";
     font-size: 1rem !important;
-    color: #888;
+    color: #fff;
     border: none;
 }
 .header__utils .header__info__item {
@@ -364,7 +353,7 @@ span.h-icon{
 }
 .header__utils .header__info__item a:link, .header__utils .header__info__item a:visited {
     padding-left: 1px;
-    color: #1a2e3c;
+    /* color: #1a2e3c; */
     opacity: 0.6;
     line-height: 14px;
     border: none;
@@ -714,7 +703,7 @@ footer.footer {
 
     header.masthead {
         height: 100vh;
-        min-height: 650px;
+        /* min-height: 650px; */
         padding-top: 0;
         padding-bottom: 0;
     }

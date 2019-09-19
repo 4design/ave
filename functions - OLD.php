@@ -102,13 +102,4 @@ function ave_cambiar_estado($states, $post){
     if ('page' === get_post_type($post->ID) && ('page-tours') == get_page_template_slug('$post->ID'));
 }
 
-add_filter( 'wp_image_editors', 'change_graphic_lib' );
-
- /*
-*  error carga de imagen http
-*/
-function change_graphic_lib($array) {
-  return array( 'WP_Image_Editor_GD', 'WP_Image_Editor_Imagick' );
-}
-
 ?>
