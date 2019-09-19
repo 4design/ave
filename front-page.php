@@ -8,17 +8,12 @@
 
 <header class="masthead imagen-fondo text-center text-white d-flex" style="background-image:url(<?php echo get_post_meta( get_the_ID(), 'ave_home_imagen_sup_1', true ); ?>);">
 
-    <div class="container my-auto">
+    <!-- <div class="container my-auto"> -->
+    <div class="container">        
         <div class="row">
-            <div class="slider" style="
-            background: transparent; 
-            position: relative;
-            width: 100%;
-            height: auto;
-            margin-top: 0px;
-            margin-bottom: 0px;">
+            <div class="slider-masthead" >
  
-            <?php add_revslider('ave-frontpage','homepage'); ?>
+            <?php add_revslider('av-slider','homepage'); ?>
 
             </div>
 
@@ -41,6 +36,8 @@
 
 <!-- <?php printf('<pre>%s</pre>', var_export(get_post_custom(get_the_ID()), true) ); ?>  -->
 
+<!-- inicio tours -->
+
 <section id="tours">
 
     <div class="container">
@@ -59,6 +56,7 @@
     </div>
 
 </section> <!-- tours -->
+<!-- fin tours -->
 
 <section> 
 

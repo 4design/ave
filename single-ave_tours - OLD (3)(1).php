@@ -2,7 +2,7 @@
 
 <?php while(have_posts()): the_post(); ?>
 
-<!-- <h1> es single-ave_tours.php</h1> -->
+<h1> es single-ave_tours.php</h1>
 
 
 <!-- inicio section #1 -->
