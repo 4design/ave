@@ -5,7 +5,7 @@
     <!-- inicio Footer #1-->
     <!-- <footer id="foot-data" class="container-fluid" style="outline:1px solid red;"> -->
 
-        <div class="container">
+        <div class="container bg-primary text-white">
             <div class="row justify-content-center">
                 <div class="phoneContainer">
                     <a href="tel:+51989166527">
@@ -18,7 +18,7 @@
 
 
     <!-- inicio footer -->    
-    <footer id="dk-footer" class="dk-footer">
+    <footer id="dk-footer bg-success" class="dk-footer">
 
             <div class="container">
                 <div class="row">

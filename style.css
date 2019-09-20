@@ -53,7 +53,13 @@ h1 > strong{
 }
 .card-img-top{
     height: auto;
+    transition: transform .2s; 
 }
+ 
+.card-img-top:hover {
+    transform: scale(1.04); 
+}
+
 #mainNav {
     border-bottom: 1px solid rgba(33,37,41,.1);
     /* background-color: #fff; */
@@ -192,6 +198,17 @@ hr {
     background-color: #e9e7e7;
     border-radius: 0rem;
 }
+
+/* zoom */
+
+img.zoom {
+    transition: transform .2s; 
+}
+ 
+img.zoom:hover {
+    transform: scale(1.5); 
+}
+
 
 /* menu ubermenu */
 

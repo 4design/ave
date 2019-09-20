@@ -7,13 +7,13 @@
 
 <!-- inicio section #1 -->
 
-<section class="clases mt-5 py-5">
+<!-- <section class="clases mt-5 py-5">
 
-        <!-- <?php printf('<pre>%s</pre>', var_export(get_post_custom(get_the_ID()), true) ); ?> -->
+        <?php /*printf('<pre>%s</pre>', var_export(get_post_custom(get_the_ID()), true) );*/ ?> 
 
-</section>
+</section> -->
 
-<!-- inicio section #1 -->
+<!-- fin section #1 -->
 
 <?php endwhile;  ?>
 
@@ -104,7 +104,7 @@
                                     <span class="price-explanation">por persona</span>
                                 </p>
                                 <div class="priceBook col-md-12 btn btn-primary"> 
-                                    <a class="text-light" href="#">  Book now   </a> 
+                                    <a class="text-light" href="#">  Reserve  </a> 
                                 </div>
 
                             <!-- inicio box cards -->
@@ -117,7 +117,7 @@
 
                             <!-- inicio box form -->
                                 <div class="mt-3 col-md-12 btn btn-primary" data-toggle="modal" data-target="#ave_Modal"> 
-                                    <a class="text-light" href="#">  Enquire now  </a> 
+                                    <a class="text-light" href="#">  Solicite  </a> 
                                 </div>
 
 
@@ -137,7 +137,7 @@
                                 <div class="modal-content">
 
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="ave_ModalLabel">  Enquire now </h5>
+                                    <h5 class="modal-title" id="ave_ModalLabel"> Solicite (Enquire now) </h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -202,13 +202,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 mx-auto">
+                    <h2 class="mb-4">Suscríbete a <span class="logo-text"> ... </span> !</h2>
                     <!-- <h2 class="mb-4">Suscríbete a <span class="logo-text">Aventuras al Sur</span> !</h2> -->
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                     <form>
                         <div class="form-row">
                             <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
-                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Sign up!</button></div>
+                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Suscribe!</button></div>
                         </div>
                     </form>
                 </div>

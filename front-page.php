@@ -55,7 +55,8 @@
           </div>
     </div>
 
-</section> <!-- tours -->
+</section> 
+
 <!-- fin tours -->
 
 <section> 

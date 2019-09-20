@@ -36,7 +36,7 @@
 <!-- inicio header -->
 <div class="header-wrap">   
 
-    <header class="header" role="banner"  style="outline:2px solid DARKTURQUOISE">
+    <header class="header" role="banner"  style="outline:0px solid DARKTURQUOISE">
 
     <div class="container">
             <div class="header__content-wrap">
