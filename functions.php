@@ -83,6 +83,7 @@ add_filter('nav_menu_link_attributes', 'ave_enlace_class', 10, 3);
      wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css', false, '4.3.1');
      wp_enqueue_style('style', get_stylesheet_uri(), array('bootstrap-css'));
      wp_enqueue_style('flexslider', get_template_directory_uri() . '/css/flexslider.css', false);
+     wp_enqueue_style('ave-effect', get_template_directory_uri() . '/css/ave-effect.css', false);
      /** Scripts **/
      wp_enqueue_script('jquery');
      wp_enqueue_script('popper', get_template_directory_uri() .'/js/popper.min.js', array('jquery'), '1.15.0', true);

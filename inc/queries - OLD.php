@@ -15,10 +15,7 @@ function ave_query_tours($cantidad = -1){
             <div class="col-md-6 col-lg-4 mb-2">
                 <div class="card">
                     <!-- <img src="img/clase1.jpg" class="card-img-top"> -->
-                    <div class="view effect">
-                        <?php the_post_thumbnail('mediano', array('class' => 'card-img-top')) ?>
-                    </div>
-                    
+                    <?php the_post_thumbnail('mediano', array('class' => 'card-img-top')) ?>
                     <div class="card-meta bg-primary p-3 text-light d-flex justify-content-end align-items-center">
                     <?php
                         $costo = get_post_meta(get_the_ID(), 'ave_tours_precio_money_adulto', true); 

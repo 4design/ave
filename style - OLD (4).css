@@ -53,12 +53,12 @@ h1 > strong{
 }
 .card-img-top{
     height: auto;
-    /* transition: transform .2s;  */
+    transition: transform .2s; 
 }
  
-/* .card-img-top:hover {
+.card-img-top:hover {
     transform: scale(1.04); 
-} */
+}
 
 #mainNav {
     border-bottom: 1px solid rgba(33,37,41,.1);
@@ -672,26 +672,7 @@ h2.subtitle{
     font-family: "Roboto Condensed";
 }
 
-/*  css3 img effect  */
-
-.view {
-    /* outline: 1px solid CRIMSON; */
-    /* width: 300px;
-    height: 200px;
-    margin: 10px; */
-    float: left;
-    /* border: 5px solid #fff; */
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    /* box-shadow: 0px 0px 5px #aaa; */
-    cursor: default;
-}
-.view img {
-    outline: 1px solid LIMEGREEN;
-    display: block;
-    position: relative;
-} 
+/*  descripcion  */
 
 /* queries PHP */
 
@@ -840,7 +821,6 @@ section#tours #tours-block h2 span, section#tours #tours-block h1 span {
 /** footer REV **/
 
 .dk-footer {
-    background-color: #8C969D;
     padding: 5px 0 0;
     position: relative;
     z-index: 2; }
@@ -852,10 +832,6 @@ section#tours #tours-block h2 span, section#tours #tours-block h1 span {
 .phoneContainer{
     font-family: "Roboto Condensed";
     font-size: 2.4rem;
-    color: #fff;
-}
-.phoneContainer a{
-    color: #fff;
 }
 .footer-social-link h3, .section-heading h3{
     font-family: "Roboto Condensed";

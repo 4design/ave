@@ -29,8 +29,7 @@
 
 </head>
 
-<!-- <body <?php body_class(); ?> id="page-top" class="index"> -->
-<body id="page-top" class="index">
+<body <?php body_class(); ?> id="page-top" class="index"> 
 
 
 <!-- inicio header -->
