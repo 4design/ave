@@ -79,8 +79,10 @@
 </section> <!-- tours -->
 
 <section> 
+    
+    <h1>OFERTAS</h1>
 
-    <div class="container">
+    <div class="container bg-danger" >
         <div class="row mt-4">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading"> Ofertas - Promociones </h2>
@@ -88,8 +90,8 @@
             </div>
         </div>
     </div>
-  <div class="publicidad">
 
+    <div class="publicidad">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-8 h-100">

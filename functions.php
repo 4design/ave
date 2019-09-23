@@ -112,4 +112,29 @@ function change_graphic_lib($array) {
   return array( 'WP_Image_Editor_GD', 'WP_Image_Editor_Imagick' );
 }
 
+ /*
+*  widget
+*/
+function ave_widgets_init() {
+    register_sidebar( array(
+		'name'          => __( 'Header', 'ave' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your header.', 'twentyseventeen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+    ) );
+    register_sidebar( array(
+		'name'          => __( 'Footer', 'ave' ),
+		'id'            => 'sidebar-2',
+		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'ave_widgets_init' );
+
 ?>

@@ -840,7 +840,7 @@ section#tours #tours-block h2 span, section#tours #tours-block h1 span {
 /** footer REV **/
 
 .dk-footer {
-    background-color: #8C969D;
+    background-color: #ccc;
     padding: 5px 0 0;
     position: relative;
     z-index: 2; }
@@ -873,7 +873,9 @@ section#tours #tours-block h2 span, section#tours #tours-block h1 span {
 
 .list-inline li{
         display: block; }
-    
+
+h2.widget-title {
+            font-size: 1.4rem;}
     
     /** footer OLD **/
     

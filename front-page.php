@@ -69,8 +69,8 @@
             </div>
         </div>
     </div>
-  <div class="publicidad">
-
+    
+    <div class="publicidad bg-info" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/nazca-lines.jpg)">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-8 h-100">
@@ -101,8 +101,8 @@
 
     <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
-            <div class="col-sm-6 col-lg-4"><a href="images/fullsize/nazca.jpg" class="portfolio-box"><img class="img-fluid"
-                        src="images/thumbnails/nazca.jpg">
+            <div class="col-sm-6 col-lg-4"><a href="<?php echo get_template_directory_uri();?> /img/fullsize/nazca.jpg" class="portfolio-box"><img class="img-fluid"
+                        src="<?php echo get_template_directory_uri();?> /img/thumbnails/nazca.jpg">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded"><span>NAZCA</span></div>
@@ -110,8 +110,8 @@
                         </div>
                     </div>
                 </a></div>
-            <div class="col-sm-6 col-lg-4"><a href="images/fullsize/paracas.jpg" class="portfolio-box"><img class="img-fluid"
-                        src="images/thumbnails/paracas.jpg">
+            <div class="col-sm-6 col-lg-4"><a href="<?php echo get_template_directory_uri();?> /img/fullsize/paracas.jpg" class="portfolio-box"><img class="img-fluid"
+                        src="<?php echo get_template_directory_uri();?> /img/thumbnails/paracas.jpg">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded"><span>PARACAS</span></div>
@@ -119,8 +119,8 @@
                         </div>
                     </div>
                 </a></div>
-            <div class="col-sm-6 col-lg-4"><a href="images/fullsize/ica.jpg" class="portfolio-box"><img class="img-fluid"
-                        src="images/thumbnails/ica.jpg">
+            <div class="col-sm-6 col-lg-4"><a href="<?php echo get_template_directory_uri();?> /img/fullsize/ica.jpg" class="portfolio-box"><img class="img-fluid"
+                        src="<?php echo get_template_directory_uri();?> /img/thumbnails/ica.jpg">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded"><span>ICA</span></div>
@@ -147,7 +147,7 @@
 
 <section class="call-to-action suscribe-em text-white text-center"
 style="background-image:url(<?php echo get_post_meta( get_the_ID(), 'ave_home_imagen_Suscribirse', true ); ?>) no-repeat center center;background-size:cover;">
- <!-- style="background:url(&quot;images/bg-masthead.jpg&quot;) no-repeat center center;background-size:cover;"> -->
+
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
