@@ -28,7 +28,7 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-fluid">
                             </a>
                             <p class="footer-info-text">
-                            <p class="text-muted small mb-4 mb-lg-0">© 2018 Copyright Aventuras al Sur
+                            <p class="text-muted small mb-4 mb-lg-0">© 2018 Copyright Go2Peru
                                 <br> Todos los derechos reservados </p>
                             </p>
                             <div class="footer-social-link mt-5">

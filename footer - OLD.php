@@ -124,7 +124,7 @@
                         ?>
 
 
-                      <p class="text-muted small mb-4 mb-lg-0">© 2018 Copyright Aventuras al Sur -- All Right Reserved </p>
+                      <p class="text-muted small mb-4 mb-lg-0">© 2018 Copyright Go2Peru -- All Right Reserved </p>
                   </div>
                   <div class="col-lg-4 my-auto h-100 text-center text-lg-right">
                       <ul class="list-inline mb-0">

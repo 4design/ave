@@ -152,7 +152,7 @@ style="background-image:url(<?php echo get_post_meta( get_the_ID(), 'ave_home_im
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 mx-auto">
-                    <h2 class="mb-4">Suscríbete a <span class="logo-text">Aventuras al Sur</span> !</h2>
+                    <h2 class="mb-4">Suscríbete a <span class="logo-text">Go2Peru</span> !</h2>
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                     <form>
