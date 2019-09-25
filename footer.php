@@ -28,9 +28,25 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-fluid">
                             </a>
                             <p class="footer-info-text">
-                            <p class="text-muted small mb-4 mb-lg-0">© 2018 Copyright Go2Peru
+                            <p class="text-muted small mb-4 mb-lg-0">
+                                © 2019 Copyright Go2Peru
                                 <br> Todos los derechos reservados </p>
                             </p>
+                            <!-- inicio cards footer -->
+                            <div class="footer-social-link mt-5">
+                                <h3> Medios de Pago </h3>
+                                <ul>
+                                    <li>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/medios-pago.png" class="img-fluid" alt="Medios de pago">
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-dollar-sign" aria-hidden="true" style="color:#6E6E6E;"></i> 
+                                        <span> Transferencia bancaria</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- fin cards footer -->
                             <div class="footer-social-link mt-5">
                                 <h3>Redes Sociales</h3>
                                 <ul>

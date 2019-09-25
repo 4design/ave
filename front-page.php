@@ -133,7 +133,7 @@
 
 </section> <!-- Mejores Destinos -->
 
-<section>
+<section class="py-4">
     <div class="container">
         <div class="row partner justify-content-center align-content-center">
                 <img class="img-fluid" decoding="async" alt="" src="<?php echo get_template_directory_uri();?> /img/ministeriodecultura.png">
