@@ -24,14 +24,24 @@
                 <div class="row mt-3">
                     <div class="col-md-12 col-lg-4">
                         <div class="dk-footer-box-info">
+
                             <a class="navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-fluid">
                             </a>
-                            <p class="footer-info-text">
-                            <p class="text-muted small mb-4 mb-lg-0">
-                                © 2019 Copyright Go2Peru
-                                <br> Todos los derechos reservados </p>
-                            </p>
+
+                            <div class="footer-info-text footer-social-link">
+                                <ul class="">
+                                    <li>
+                                        <i class="far fa-envelope" aria-hidden="true"></i> 
+                                        <span class="ml-2"> info@go2peru.travel</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="ml-2"> Av. lorem ipsum daceedaaa 340 Lorem</span>
+                                    </li>
+                                </ul>
+                            </div>
+
                             <!-- inicio cards footer -->
                             <div class="footer-social-link mt-5">
                                 <h3> Medios de Pago </h3>
@@ -47,27 +57,11 @@
 
                             </div>
                             <!-- fin cards footer -->
+                            <!-- inicio Social link -->
                             <div class="footer-social-link mt-5">
-                                <h3>Redes Sociales</h3>
-                                <ul>
-                                    <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook fa-2x fa-fw" aria-hidden="true" style="font-size:2rem"></i> 
-                                    </a>
-                                    </li>
-                                    <li>
-                                    <a href="#">
-                                        <i class="fab fa-twitter fa-2x fa-fw" aria-hidden="true" style="font-size:2rem"></i>
-                                    </a>
-                                    </li>
-                                    <li>
-                                    <a href="#">
-                                        <i class="fab fa-instagram fa-2x fa-fw" aria-hidden="true" style="font-size:2rem"></i>
-                                    </a>
-                                    </li>
 
-                                </ul>
-                            </div>   <!-- End Social link -->
+                            </div>   
+                            <!-- fin Social link -->
                         </div>    <!-- End dk-footer-box-info -->
 
                     </div>
@@ -75,11 +69,9 @@
                     <div class="col-md-12 col-lg-8">
                         <div class="row">
                             <div class="col-md-6">
-
                             </div>
                             <!-- End Col -->
                             <div class="col-md-6">
-
                             </div>
                             <!-- End Col -->
                         </div>
@@ -93,10 +85,8 @@
                                         <span class="animate-border border-black"></span>
                                     </div>
                                     <ul class="list-inline mb-2">
-                                        <li class="list-inline-item"><a href="nosotros"> Nazca </a></li>
-                                        
-                                        <li class="list-inline-item"><a href="Sitemap"> Paracas </a></li>
-                                        
+                                        <li class="list-inline-item"><a href="nosotros"> Nazca </a></li> 
+                                        <li class="list-inline-item"><a href="Sitemap"> Paracas </a></li>  
                                         <li class="list-inline-item"><a href="contacto"> Ica </a></li>
                                         
                                     </ul>
@@ -110,14 +100,10 @@
                                         <span class="animate-border border-black"></span>
                                     </div>
                                     <ul class="list-inline mb-2">
-                                        <li class="list-inline-item"><a href="nosotros">Nosotros</a></li>
-                                        
+                                        <li class="list-inline-item"><a href="nosotros">Nosotros</a></li>  
                                         <li class="list-inline-item"><a href="Sitemap">Sitemap</a></li>
-                                        
-                                        <li class="list-inline-item"><a href="contacto">Contacto</a></li>
-                                        
+                                        <li class="list-inline-item"><a href="contacto">Contacto</a></li>  
                                         <li class="list-inline-item"><a href="terminos-de-uso">Terminos de uso</a></li>
-                                        
                                         <li class="list-inline-item"><a href="politica-de-privacidad">Politica de Privacidad</a></li>
                                     </ul>
 
@@ -134,6 +120,38 @@
                                 <!-- End footer widget -->
                             </div>
                             <!-- End Col -->
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget">
+                                    <!-- inicio Redes sociales -->
+                                    <div class="section-heading footer-social-link">
+                                        <h3> Redes Sociales</h3>
+                                        <span class="animate-border border-black"></span>
+
+                                        <ul class="d-flex">
+                                                <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook fa-2x fa-fw" aria-hidden="true" style="font-size:2rem"></i> 
+                                                </a>
+                                                </li>
+                                                <li>
+                                                <a href="#">
+                                                    <i class="fab fa-twitter fa-2x fa-fw" aria-hidden="true" style="font-size:2rem"></i>
+                                                </a>
+                                                </li>
+                                                <li>
+                                                <a href="#">
+                                                    <i class="fab fa-instagram fa-2x fa-fw" aria-hidden="true" style="font-size:2rem"></i>
+                                                </a>
+                                                </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <!-- fin Redes sociales -->   
+                                </div>
+                                <!-- End footer widget -->
+                            </div>
+                            <!-- End Col -->
                         </div>
                         <!-- End Row -->
                     </div>
@@ -145,7 +163,7 @@
 
             <!-- inicio Copyright -->
             <div class="copyright">
-                <div class="container">
+                <div class="footer__bottom container">
                     <div class="row">
                         <div class="col-md-6">
                             <span>Copyright © 2019, Todos los derechos reservados </span>

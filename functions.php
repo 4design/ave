@@ -56,6 +56,7 @@ function ave_setup(){
     add_image_size('mediano', 350, 300, true);
     add_image_size('mediano-1', 510, 340, true);
     add_image_size('grande_header_int', 1600, 500, true);
+    add_image_size('blog-size', 700, 200, true);
     //
     add_theme_support( 'post-thumbnails' );
     //
