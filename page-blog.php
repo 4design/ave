@@ -12,8 +12,7 @@
 
     <div class="container" style="outline:1px solid CRIMSON">
         
-       mmmmmm
-       <h1><span><?php the_title(); ?></span></h1>
+       <h1 class="d-flex text-center"><span><?php the_title(); ?></span></h1>
 
         <!-- <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1 ?> -->
         <?php $args = array(
@@ -26,51 +25,37 @@
 
         <?php $blog1 = new WP_Query($args); ?>
         
-        <?php while($blog1->have_posts() ): $blog1->the_post(); ?>
+        <div class="row" style="outline:1px solid SALMON">
+                
+            <div class="col-md-9" style="outline:1px solid SPRINGGREEN; background-color:CRIMSON;">
+                
+            <?php while($blog1->have_posts() ): $blog1->the_post(); ?>
 
-        
-            
-        <div class="row" style="outline:1px solid DEEPPINK">
-            
-            <!-- inicio caja 10 -->
-            <div class="col-md-10" style="outline:1px solid SPRINGGREEN">
+                <div class="row">
 
-                <!-- inicio caja articulos -->
-                <article class="">
-                    <div class="row">
-                        <!-- inicio imagen articulo -->
-                        <div class="col-md-2" style="outline:1px solid TURQUOISE">
-                            <div class="foto">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_post_thumbnail('mediano'); ?></a>
-                            </div>
-                        </div>
-                        <!-- fin imagen articulo -->
-                        <!-- inicio body articulo -->
-                        <div class="col-md-10" style="outline:1px solid MAROON">
-                            <h2>
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            </h2>
-                            <?php aWP_excerpt('aWP_custom_post') ?>
-                        </div>
-                        <!-- fin body articulo -->
+                    <div class="col-md-12" style="outline:1px solid SPRINGGREEN; height:40px;">
+
+                    mmmmmmmmmmmmmmm
+
+                    
+
                     </div>
 
-                </article>
-                <!-- fin caja articulos -->
+                </div>
 
-                col-md-10
+            <?php endwhile; wp_reset_postdata(); ?>
+
             </div>
-            <!-- fin caja 10 -->
-            <!-- inicio caja 2 -->
-            <div class="col-md-2" style="outline:1px solid STEELBLUE">
-                col-md-2
+
+            <div class="col-md-3" style="outline:0px solid STEELBLUE; background-color:PERU; height:300px;">
+                col-md-3
             </div>
-            <!-- fin caja 2 -->
+
         </div>
 
 
-       <?php endwhile; wp_reset_postdata(); ?>
+
+       
             
     </div>
 
