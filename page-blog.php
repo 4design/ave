@@ -17,7 +17,7 @@
         <!-- <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1 ?> -->
         <?php $args = array(
                 'post_type' => 'post',
-                /*'posts_per_page' => 1,*/
+                'posts_per_page' => -1,  /** mostrar todo **/
                 'orderby' => 'date',
                 'order' => 'DESC',
                 /*'paged' => $paged*/
@@ -33,11 +33,26 @@
 
                 <div class="row">
 
-                    <div class="col-md-12" style="outline:1px solid SPRINGGREEN; height:40px;">
+                    <div class="col-md-12" style="outline:1px solid SPRINGGREEN;">
 
-                    mmmmmmmmmmmmmmm
-
-                    
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <div class="row">
+                            <!-- inicio imagen articulo -->
+                            <div class="col-md-3 m-auto" style="outline:1px solid TURQUOISE; background-color:#3575D3;">
+                                <div class="foto">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php the_post_thumbnail('mediano'); ?></a>
+                                </div>
+                            </div>
+                            <!-- fin imagen articulo -->
+                            <!-- inicio body articulo -->
+                            <div class="col-md-9" style="outline:1px solid TURQUOISE; background-color:LIME;">
+                                <h2> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h2>
+                                <?php aWP_excerpt('aWP_custom_post') ?>
+                            </div>
+                            <!-- fin body articulo -->
+                        </div>
+                    </article>
 
                     </div>
 

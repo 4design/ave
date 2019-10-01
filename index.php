@@ -3,6 +3,9 @@
 
 <header class="masthead text-center text-white d-flex" style="background-image:url('images/header.jpg');">
     <div class="container my-auto">
+
+    <h1> index.php </h1>
+
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h1 class="text-uppercase"><strong>Disfrute de un viaje increible  <br> a Nazca y Paracas</strong></h1>
