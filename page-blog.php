@@ -4,7 +4,7 @@
  */
  get_header(); ?>
 
-<h1> page-blog.php </h1>
+<!-- <h1> page-blog.php </h1> -->
 
 <!-- inicio blog -->
 
