@@ -10,9 +10,14 @@
 
 <section id="blog">
 
-    <div class="container" style="outline:1px solid CRIMSON">
-        
-       <h1 class="d-flex text-center"><span><?php the_title(); ?></span></h1>
+    <div class="container">
+
+        <div class="row mt-4">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading"> <?php the_title(); ?> </h2>
+                </div>
+        </div>
+
 
         <!-- <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1 ?> -->
         <?php $args = array(
@@ -25,46 +30,69 @@
 
         <?php $blog1 = new WP_Query($args); ?>
         
-        <div class="row" style="outline:1px solid SALMON">
+        <div class="row">
                 
-            <div class="col-md-9" style="outline:1px solid SPRINGGREEN; background-color:CRIMSON;">
+            <div class="col-md-9">
                 
             <?php while($blog1->have_posts() ): $blog1->the_post(); ?>
 
                 <div class="row">
 
-                    <div class="col-md-12" style="outline:1px solid SPRINGGREEN;">
+                    <!-- inicio article --> 
+                    <div class="col-12 my-2 blog-article" style="">
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="row">
                             <!-- inicio imagen articulo -->
-                            <div class="col-md-3 m-auto" style="outline:1px solid TURQUOISE; background-color:#3575D3;">
-                                <div class="foto">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <?php the_post_thumbnail('mediano'); ?></a>
+                            <div class="col-md-3 m-auto">
+                                <div class="bf-thumb">
+
+                                    <div class="view effect">
+                                        <?php the_post_thumbnail('mediano', array('class' => '')) ?>
+                                    </div>
+
                                 </div>
                             </div>
                             <!-- fin imagen articulo -->
                             <!-- inicio body articulo -->
-                            <div class="col-md-9" style="outline:1px solid TURQUOISE; background-color:LIME;">
-                                <h2> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h2>
+                            <div class="col-md-9 p-2 pl-4">
+
+                                <span class="blog-date date"><?php the_time('F j, Y'); ?> <!--<?php the_time('g:i a'); ?>--></span>
+                                <span class="blog-date"><?php _e( ' ', 'ave' ); the_category(', '); // Separated by commas ?></span>
+
+                                <h2 class="blog-title-list"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h2>
                                 <?php aWP_excerpt('aWP_custom_post') ?>
+
+                                <div class="read">
+                                    <a href="<?php the_permalink(); ?>" class="read-more"> más información </a>
+                                </div>
+
                             </div>
                             <!-- fin body articulo -->
                         </div>
                     </article>
 
                     </div>
+                    <!-- fin /article --> 
 
                 </div>
+
 
             <?php endwhile; wp_reset_postdata(); ?>
 
             </div>
 
-            <div class="col-md-3" style="outline:0px solid STEELBLUE; background-color:PERU; height:300px;">
-                col-md-3
+            <div class="col-md-3">
+                
+                <div class="row">
+
+                    <?php dynamic_sidebar('sidebar-right'); ?>
+
+                </div>
+
             </div>
+
+            
 
         </div>
 

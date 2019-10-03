@@ -1,0 +1,12 @@
+
+single.php      ----------------------------->     ?p=235           |   blog.php    >   detalle blog
+page-blog.php   ----------------------------->     ?page_id=243     |               >   listado blog
+
+frontpage.php   ----------------------------->                      |               >   home
+header.php      ----------------------------->                      |               >   header
+footer.php      ----------------------------->                      |               >   footer
+single-ave_tours.php ------------------------>                      |               >   detalle tours
+
+queries.php     ----------------------------->                      |               >   trip destacados
+
+page_tours.php

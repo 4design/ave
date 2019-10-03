@@ -20,15 +20,15 @@
                 </a>
             <?php endif; ?>
             <!-- /post thumbnail -->          
-                         <!-- post title -->
-                         <h1 class="blog-title">
-                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-            </h1>
-            <!-- /post title -->      
+            <!-- post title -->
+                <h1 class="blog-title">
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                </h1>
+            <!-- /post title -->   
             </div>
 
 
-            
+            <!-- meta -->
             <div class="b-content my-4" style="outline:2px solid blue;">
             
                 <div class="blog-meta">
@@ -42,16 +42,16 @@
                 </div>
 
             
-            <?php the_content(); // Dynamic Content ?>
+                <?php the_content(); // Dynamic Content ?>
 
-            <!-- SE VA -->
+                <!-- SE VA -->
                 <?php the_tags( __( 'Tags: ', 'ave' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
                 <p><?php _e( 'This post was written by ', 'ave' ); the_author(); ?></p>
                 <?php edit_post_link(); // Always handy to have Edit Post Links available ?>
                 <!-- <?php comments_template(); ?> -->
             
-
             </div>
+            <!-- / meta -->
            
 
         </article>
@@ -94,8 +94,7 @@
 
         <!-- fin tours -->
 
-    </div>
-    
+    </div>    
     
     
     </div>
