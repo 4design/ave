@@ -779,6 +779,14 @@ h2.blog-title-list a:hover , .read-more:hover{
     color:#B92C4C;
 }
 
+/* suscribe*/
+
+
+h3.yikes-mailchimp-form-title, span.EMAIL-label{
+    display: none;
+}
+
+
 /* sidebar*/
 
 section h2.widget-title{

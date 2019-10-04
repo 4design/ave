@@ -158,17 +158,8 @@ style="background-image:url(<?php echo get_post_meta( get_the_ID(), 'ave_home_im
 
                 <!-- code shortcode -->
                 <?php echo do_shortcode("[yikes-mailchimp form='1' title='form mailchimp']"); ?>
-
-                [yikes-mailchimp form="1"]
-
                 <!-- /code shortcode -->
-                
-                    <form>
-                        <div class="form-row" style="outline:2px solid LIGHTSEAGREEN">
-                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
-                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Sign up!</button></div>
-                        </div>
-                    </form>
+
                 </div>
             </div>
         </div>
