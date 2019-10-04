@@ -155,8 +155,16 @@ style="background-image:url(<?php echo get_post_meta( get_the_ID(), 'ave_home_im
                     <h2 class="mb-4">Suscríbete a <span class="logo-text">Go2Peru</span> !</h2>
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+
+                <!-- code shortcode -->
+                <?php echo do_shortcode("[yikes-mailchimp form='1' title='form mailchimp']"); ?>
+
+                [yikes-mailchimp form="1"]
+
+                <!-- /code shortcode -->
+                
                     <form>
-                        <div class="form-row">
+                        <div class="form-row" style="outline:2px solid LIGHTSEAGREEN">
                             <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
                             <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Sign up!</button></div>
                         </div>
