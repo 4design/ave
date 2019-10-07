@@ -1,0 +1,11 @@
+
+
+TO DO
+. INDEX.PHP     / SUSCRIBE / <section class="call-to-action
+. SINGLE.PHP     / SUSCRIBE / <section class="call-to-action
+
+DOING
+
+DONE
+
+.single-ave_tours.php  / SUSCRIBE

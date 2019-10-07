@@ -22,9 +22,9 @@
 
 <section id="tours" class="p-0">
 
-    <div class="container tours-wrap" style="outline:2px solid deeppink;">
+    <div class="container">
         <div class="row mt-2">
-
+            
             <!-- inicio breadcrumb -->
 
             <div class="p-0 w-100">
