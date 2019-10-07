@@ -24,11 +24,20 @@
 
     <div class="container">
         <div class="row mt-2">
+            
+            <!-- inicio breadcrumb -->
+
+            <div class="p-0 w-100">
+                    <?php if ( function_exists('yoast_breadcrumb') ) {
+                        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );}
+                    ?>            
+                </div>
+
+            <!-- fin breadcrumb -->            
 
             <div class="col-lg-12 mb-2">
                 <h1 class="section-heading mt-2 text-center"> <?php the_title(); ?> </h1>
             </div> <!--  titulo -->
-
 
 
             <div class="row w-100 justify-content-between">
@@ -156,15 +165,7 @@
                 </div> <!-- botones -->
             </div> <!--  carrousel + botones -->
 
- <!-- inicio breadcrumb -->
 
-    <div class="p-0 w-100">
-        <?php if ( function_exists('yoast_breadcrumb') ) {
-            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );}
-        ?>            
-    </div>
-
-<!-- fin breadcrumb -->
 
             <div class="p-4 w-100">
                     <h2 class="subtitle ml-4"> Itinerario </h2> 
