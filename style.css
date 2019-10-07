@@ -779,12 +779,32 @@ h2.blog-title-list a:hover , .read-more:hover{
     color:#B92C4C;
 }
 
+
 /* suscribe*/
 
 
 h3.yikes-mailchimp-form-title, span.EMAIL-label{
     display: none;
 }
+.yikes-easy-mc-form {
+    display: flex !important;
+    /* width: 100%; */
+}
+.yikes-easy-mc-form .yikes-easy-mc-submit-button {
+    display: block;
+    width: 40% !important;
+    margin-top: 0em !important;
+    min-height: 40px;
+    padding: 9px!important;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.yikes-easy-mc-form input[type=email] {
+
+    border: 0px solid rgba(51,51,51,.1)!important;
+
+}
+
 
 
 /* sidebar*/

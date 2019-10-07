@@ -161,7 +161,6 @@ style="background-image:url(<?php echo get_post_meta( get_the_ID(), 'ave_home_im
                 <!-- /code shortcode -->
 
                 </div>
-
             </div>
         </div>
 </section><!-- Suscríbete -->
