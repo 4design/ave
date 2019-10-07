@@ -156,6 +156,16 @@
                 </div> <!-- botones -->
             </div> <!--  carrousel + botones -->
 
+ <!-- inicio breadcrumb -->
+
+    <div class="p-0 w-100">
+        <?php if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );}
+        ?>            
+    </div>
+
+<!-- fin breadcrumb -->
+
             <div class="p-4 w-100">
                     <h2 class="subtitle ml-4"> Itinerario </h2> 
                     <div class="accordion" id="accordionExample">

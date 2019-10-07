@@ -36,6 +36,11 @@
 
 <!-- <?php printf('<pre>%s</pre>', var_export(get_post_custom(get_the_ID()), true) ); ?>  -->
 
+<!-- inicio breadcrumb -->
+
+
+<!-- fin breadcrumb -->
+
 <!-- inicio tours -->
 
 <section id="tours">
@@ -149,7 +154,7 @@
 style="background-image:url(<?php echo get_post_meta( get_the_ID(), 'ave_home_imagen_Suscribirse', true ); ?>) no-repeat center center;background-size:cover;"> -->
 <section class="call-to-action suscribe-em text-white text-center" 
     style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/bg-masthead.jpg)">
-    
+
         <div class="overlay"></div>
         <div class="container">
             <div class="row">

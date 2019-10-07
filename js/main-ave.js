@@ -11,7 +11,7 @@
 		});
 	});
 
-	
+	// anadir clases de CSS
 	$('#yikes-easy-mc-form-1-EMAIL').addClass('	form-control form-control-lg');
 
 

@@ -180,4 +180,9 @@ function aWP_excerpt($length_callback = '', $more_callback = '')
     echo $output;
 }
 
+
+// Breadcrumbs
+
+
+
 ?>
