@@ -24,59 +24,143 @@
 
     <div class="container tours-wrap" style="outline:1px solid ORANGERED;">
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-8" style="background-color:red;">.col-xs-12 .col-sm-6 .col-lg-8</div>
-        <div class="col-xs-12 col-sm-6 col-lg-4" style="background-color:lavender;">.col-xs-12 .col-sm-6 .col-lg-4</div>
-    </div>
+        <div class="row mt-2" style="outline:1px solid DODGERBLUE;">
 
-        <div class="row mt-2">
-
-            <div class="d-flex px-4 w-100">
-                <!-- inicio breadcrumb -->
-                <div class="p-0 w-100">
+            <div class="col-xs-12 col-sm-6 col-lg-8" style="outline:1px solid DARKRED;">
+            
+                    <!-- inicio breadcrumb -->
+                    <div class="p-0 w-100">
                         <?php if ( function_exists('yoast_breadcrumb') ) {
                             yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );}
                         ?>            
-                </div>
-                <!-- fin breadcrumb -->    
+                    </div>
+                    <!-- fin / breadcrumb -->   
+
             </div>
 
-       
-
-            <div class="col-lg-12 mb-2">
-                <h1 class="section-heading mt-2 text-center"> <?php the_title(); ?> </h1>
-            </div> <!-- / titulo -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+            
+            </div>
 
 
+            <div class="col-lg-12 mb-2" style="outline:1px solid DARKRED;">
+                    
+                <h1 class="section-heading mt-2 text-center"> <?php the_title(); ?> </h1>           
+                <!-- / titulo --> 
+
+            </div>
 
 
-    <!-- inicio carousel y boton pago -->
-    <div class="d-flex px-4 w-100">
+            <div class="col-xs-12 col-sm-8 col-lg-8" style="outline:1px solid DARKRED;">
+            
+            <?php
+            function cmb2_output_file_list( $file_list_meta_key, $img_size = '' ) {
+                $files = get_post_meta( get_the_ID(), $file_list_meta_key, 1 );
+
+                if ($files) { // if there are images attached to posting, start the flexslider markup
+
+                    echo '<div class="flexslider">';
+                    echo '<ul class="slides">';
+                    
+                    $counter = 0;
+                    foreach ( (array) $files as $attachment_id => $attachment_url ) {
+
+                        $args = array();
+                        if ( 0 === $counter ) {
+                            $args = array(
+                                //'alt'   => '',
+                                //'class' => '',
+                                );
+                        }
+                        echo '<li>';
+                        echo wp_get_attachment_image( $attachment_id, $img_size, false );
+                        echo '</li>';
+
+                        $counter++;
+
+                    }
+                    
+                    echo '</ul>';
+                    echo '</div>';
+                }};
+                ?>
+
+                <?php cmb2_output_file_list( 'title_tours_imagenes_filelist', 'mediano-1' ); ?>
+                <!-- <?php echo get_post_meta( get_the_ID(), 'title_tours_imagenes_filelist', true ); ?>
+                <?php the_post_thumbnail('mediano-1') ?> -->
 
 
-        <div class="col-12 col-md-8 p-0 bg bg-danger">
+            </div>
+            <!-- / carousel -->
 
+            <div class="col-xs-12 col-sm-4 col-lg-4" style="outline:1px solid MEDIUMSLATEBLUE;">
         
-kkkkkkkkkkk
-        
-        
+                    <!-- inicio box precio -->
+                    <div class="" style="outline:0px solid DEEPPINK;">
+                        <div class="price-block has-price" style="outline:0px solid AQUA;">
+                            <div class="px-2 activity-features-price top-border-highlight">
 
-        </div>
-         <!-- / carousel -->
+                                <?php
+                                    $costo = get_post_meta(get_the_ID(), 'ave_tours_precio_money_adulto', true); 
+                                ?> 
+                                <p class="price"> 
+                                    <span class="price-from">desde</span> 
+                                    <strong class="price-actual">US 
+                                        <?php echo asDollars($costo); ?>
+                                    </strong>
+                                    <span class="price-explanation">por persona</span>
+                                </p>
+                                <div class="priceBook col-md-12 btn btn-primary"> 
+                                    <a class="text-light" href="#">  Reserve  </a> 
+                                </div>
 
-        <div class="col-xs-12 col-md-4 pr-0 bg bg-info">
+                            <!-- inicio box cards -->
+                                <div class="d-flex w-100 bg-white">    
+                                    <a class="d-flex mx-auto navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
+                                        <img class="mt-3 img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/cards-150x150.jpg">
+                                    </a>
+                                </div>
+                            <!-- fin box cards -->
 
-       
-mmmmmmmm
-      
-
-        </div>
-         <!-- / box precio -->
-        
-    </div>
-    <!-- fin /carousel y boton pago -->
+                            <!-- inicio box form -->
+                                <div class="mt-3 col-md-12 btn btn-primary" data-toggle="modal" data-target="#ave_Modal"> 
+                                    <a class="text-light" href="#">  Solicite  </a> 
+                                </div>
 
 
+                            <!-- fin box form -->
+
+                            </div>
+
+                        </div>
+
+                    </div> 
+                    <!-- fin box precio -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ave_Modal" tabindex="-1" role="dialog" aria-labelledby="ave_ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ave_ModalLabel"> Solicite (Enquire now) </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                    <?php echo do_shortcode( '[contact-form-7 id="153" title="Formulario de contacto 1"]' ); ?>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <!-- / box precio -->
+  
 
             <div class="p-4 w-100">
                     <h2 class="subtitle ml-4"> Itinerario </h2> 
