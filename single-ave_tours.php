@@ -22,11 +22,11 @@
 
 <section id="tours" class="p-0">
 
-    <div class="container tours-wrap" style="outline:1px solid ORANGERED;">
+    <div class="container tours-wrap">
 
-        <div class="row mt-2" style="outline:1px solid DODGERBLUE;">
+        <div class="row mt-2">
 
-            <div class="col-xs-12 col-sm-6 col-lg-8" style="outline:1px solid DARKRED;">
+            <div class="col-xs-12 col-sm-6 col-lg-8">
             
                     <!-- inicio breadcrumb -->
                     <div class="p-0 w-100">
@@ -43,7 +43,7 @@
             </div>
 
 
-            <div class="col-lg-12 mb-2" style="outline:1px solid DARKRED;">
+            <div class="col-lg-12 mb-2">
                     
                 <h1 class="section-heading mt-2 text-center"> <?php the_title(); ?> </h1>           
                 <!-- / titulo --> 
@@ -51,7 +51,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-sm-8 col-lg-8" style="outline:1px solid DARKRED;">
+            <div class="col-xs-12 col-sm-8 col-lg-8">
             
             <?php
             function cmb2_output_file_list( $file_list_meta_key, $img_size = '' ) {
@@ -93,11 +93,11 @@
             </div>
             <!-- / carousel -->
 
-            <div class="col-xs-12 col-sm-4 col-lg-4" style="outline:1px solid MEDIUMSLATEBLUE;">
+            <div class="col-xs-12 col-sm-4 col-lg-4">
         
                     <!-- inicio box precio -->
-                    <div class="" style="outline:0px solid DEEPPINK;">
-                        <div class="price-block has-price" style="outline:0px solid AQUA;">
+                    <div class="">
+                        <div class="price-block has-price">
                             <div class="px-2 activity-features-price top-border-highlight">
 
                                 <?php
@@ -161,6 +161,22 @@
             </div>
             <!-- / box precio -->
   
+            <div class="px-4 w-100" style="outline:0px solid red;">
+                <div class="box-desc p-4">
+                    
+                    mmmmmm mm 
+
+                </div>
+            </div>
+
+            <style>
+                .box-desc{
+                    background-color: #F6F6F6;
+                    border: 1px solid #DFDFDF;
+                    border-top: 2px solid #005ED6;
+                }
+            </style>
+            <!-- / box sinopsis -->
 
             <div class="p-4 w-100">
                     <h2 class="subtitle ml-4"> Itinerario </h2> 
