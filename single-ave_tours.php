@@ -22,148 +22,59 @@
 
 <section id="tours" class="p-0">
 
-    <div class="container tours-wrap" style="outline:2px solid deeppink;">
+    <div class="container tours-wrap" style="outline:1px solid ORANGERED;">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-8" style="background-color:red;">.col-xs-12 .col-sm-6 .col-lg-8</div>
+        <div class="col-xs-12 col-sm-6 col-lg-4" style="background-color:lavender;">.col-xs-12 .col-sm-6 .col-lg-4</div>
+    </div>
+
         <div class="row mt-2">
 
-            <!-- inicio breadcrumb -->
-
-            <div class="p-0 w-100">
-                    <?php if ( function_exists('yoast_breadcrumb') ) {
-                        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );}
-                    ?>            
+            <div class="d-flex px-4 w-100">
+                <!-- inicio breadcrumb -->
+                <div class="p-0 w-100">
+                        <?php if ( function_exists('yoast_breadcrumb') ) {
+                            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );}
+                        ?>            
                 </div>
+                <!-- fin breadcrumb -->    
+            </div>
 
-            <!-- fin breadcrumb -->            
+       
 
             <div class="col-lg-12 mb-2">
                 <h1 class="section-heading mt-2 text-center"> <?php the_title(); ?> </h1>
-            </div> <!--  titulo -->
+            </div> <!-- / titulo -->
 
 
-            <div class="row w-100 justify-content-between">
-                <div class="col-md-8">
-                        <div class="containercc">
 
-                                <div class="">
-                        
-                                    <div class="">
-                        
-                                        <div class="">
 
-                                        <?php
+    <!-- inicio carousel y boton pago -->
+    <div class="d-flex px-4 w-100">
 
-                                        function cmb2_output_file_list( $file_list_meta_key, $img_size = '' ) {
-                                            $files = get_post_meta( get_the_ID(), $file_list_meta_key, 1 );
 
-                                            if ($files) { // if there are images attached to posting, start the flexslider markup
+        <div class="col-12 col-md-8 p-0 bg bg-danger">
+
         
-                                                echo '<div class="flexslider">';
-                                                echo '<ul class="slides">';
-                                                
-                                                $counter = 0;
-                                                foreach ( (array) $files as $attachment_id => $attachment_url ) {
+kkkkkkkkkkk
+        
+        
 
-                                                    $args = array();
-                                                    if ( 0 === $counter ) {
-                                                        $args = array(
-                                                            //'alt'   => '',
-                                                            //'class' => '',
-                                                            );
-                                                    }
-                                                    echo '<li>';
-                                                    echo wp_get_attachment_image( $attachment_id, $img_size, false );
-                                                    echo '</li>';
+        </div>
+         <!-- / carousel -->
 
-                                                    $counter++;
+        <div class="col-xs-12 col-md-4 pr-0 bg bg-info">
 
-                                                }
-                                                
-                                                echo '</ul>';
-                                                echo '</div>';
-                                            }};
-                                            ?>
+       
+mmmmmmmm
+      
 
-
-                                            <?php cmb2_output_file_list( 'title_tours_imagenes_filelist', 'mediano-1' ); ?>
-                                            <!-- <?php echo get_post_meta( get_the_ID(), 'title_tours_imagenes_filelist', true ); ?>
-                                            <?php the_post_thumbnail('mediano-1') ?> -->
-                                        </div>
-                        
-                                    </div>
-                        
-                                </div>
-                        </div>
-                </div> <!-- carousel -->
- 
-                <div class="col-md-4">
-                    
-                    <!-- inicio box precio -->
-                    <div class="" style="outline:0px solid DEEPPINK;">
-                        <div class="price-block has-price" style="outline:0px solid AQUA;">
-                            <div class="px-2 activity-features-price top-border-highlight">
-
-                                <?php
-                                    $costo = get_post_meta(get_the_ID(), 'ave_tours_precio_money_adulto', true); 
-                                ?> 
-                                <p class="price"> 
-                                    <span class="price-from">desde</span> 
-                                    <strong class="price-actual">US 
-                                        <?php echo asDollars($costo); ?>
-                                    </strong>
-                                    <span class="price-explanation">por persona</span>
-                                </p>
-                                <div class="priceBook col-md-12 btn btn-primary"> 
-                                    <a class="text-light" href="#">  Reserve  </a> 
-                                </div>
-
-                            <!-- inicio box cards -->
-                                <div class="d-flex w-100 bg-white">    
-                                    <a class="d-flex mx-auto navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
-                                        <img class="mt-3" src="<?php echo get_template_directory_uri(); ?>/img/credit-cards.png" class="img-fluid">
-                                    </a>
-                                </div>
-                            <!-- fin box cards -->
-
-                            <!-- inicio box form -->
-                                <div class="mt-3 col-md-12 btn btn-primary" data-toggle="modal" data-target="#ave_Modal"> 
-                                    <a class="text-light" href="#">  Solicite  </a> 
-                                </div>
-
-
-                            <!-- fin box form -->
-
-                            </div>
-
-                        </div>
-
-                    </div> 
-                    <!-- fin box precio -->
-
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="ave_Modal" tabindex="-1" role="dialog" aria-labelledby="ave_ModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="ave_ModalLabel"> Solicite (Enquire now) </h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    
-                                    <?php echo do_shortcode( '[contact-form-7 id="153" title="Formulario de contacto 1"]' ); ?>
-                                    
-                                </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                </div> <!-- botones -->
-            </div> <!--  carrousel + botones -->
+        </div>
+         <!-- / box precio -->
+        
+    </div>
+    <!-- fin /carousel y boton pago -->
 
 
 
@@ -174,21 +85,21 @@
                             <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_itinerario', true ); ?>
                         </div>
                     </div>  
-            </div> <!-- Itinerario -->
+            </div> <!-- /Itinerario -->
 
             <div class="p-4 w-100">
                     <h2 class="subtitle ml-4"> Incluye </h2>  
                     <div class="content-list py-4">    
                         <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_incluye', true ); ?>
                     </div>
-            </div> <!-- Incluye -->
+            </div> <!-- /Incluye -->
 
             <div class="p-4 w-100">
                     <h2 class="subtitle ml-4"> No Incluye </h2>  
                     <div class="content-list py-4">  
                         <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_no_incluye', true ); ?>
                     </div> 
-            </div> <!-- no Incluye -->
+            </div> <!-- /no Incluye -->
 
             <div>
                 <h2 class="subtitle ml-4"> Tours similares </h2>                 
@@ -197,7 +108,7 @@
                         <?php ave_query_tours(3); ?>
                     </div>
                 </div>
-            </div> <!-- tours similares -->
+            </div> <!-- /tours similares -->
 
         </div>
     </div>

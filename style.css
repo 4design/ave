@@ -600,15 +600,13 @@ p.parrafo {
     margin-bottom: 2px;
 }
 .price-block.has-price {
-    border: solid #c6c8d0;
+    background-color: #fff;
+    border: solid #ccc;
     border-width: 0 2px 2px;
     border-radius: 2px;
-}
-
-
-.price-block .top-border-highlight {
     border-top: 4px solid #1593ff;
 }
+
 .price-block .activity-features-price {
     display: -webkit-box;
     display: -moz-box;
