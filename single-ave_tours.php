@@ -160,25 +160,90 @@
 
             </div>
             <!-- / box precio -->
-  
-            <div class="px-4 w-100" style="outline:0px solid red;">
-                <div class="box-desc p-4">
-                    
-                    mmmmmm mm 
 
-                </div>
+            <!-- inicio box descrip -->
+
+            <div class="p-4 box-description">
+
+                <div class="col-xs-12 box-cambio bg bg-primary"> mm </div>
+                <div class="col-xs-12 box-cambio bg bg-info"> oo </div>
+
             </div>
 
-            <style>
-                .box-desc{
-                    background-color: #F6F6F6;
-                    border: 1px solid #DFDFDF;
-                    border-top: 2px solid #005ED6;
-                }
-            </style>
+            
+
+            
+                <div class="col-xs-12 col-md-6 box-desc p-3">  
+
+                        <ul class="nav nav-tabs tabs-tours">
+                            <li class="active">
+                                <a href="#itinerario">
+                                <span> ITINERARIO </span></a>
+                            </li>
+                            <li>
+                                <a href="#incluye"> 
+                                <span> INCLUYE </span></a>
+                            </li>
+                            <li>
+                                <a href="#no-incluye">
+                                <span> NO INCLUYE </span></a>
+                            </li>
+                            <li>
+                                <a href="#similares">
+                                <span> TOURS SIMILARES </span></a>
+                            </li>
+                        </ul>
+                            
+                </div>
+                <div class="col-xs-12 col-md-6 box-desc1 p-3">  
+
+                        <div class="row-one d-flex justify-content-around">
+                            <div class="tours-wrapper">
+                                <p style="text-align: center;">
+                                    <span class="sub-lb"> Duración </span>
+                                </p>
+                                <div class="media-heading" style="text-align: center;">
+                                    <span style="color: #000000;">4 Days</span>
+                                </div> 
+                            </div>
+                            <div class="tours-wrapper">
+                                <p style="text-align: center;">
+                                    <span class="sub-lb"> Tipo tour </span>
+                                </p>
+                                <div class="media-heading" style="text-align: center;">
+                                    <span style="color: #000000;"> Hiking </span>
+                                </div>
+                            </div>
+                            <div class="tours-wrapper">
+                                <p style="text-align: center;">
+                                    <span class="sub-lb"> Ratings </span>
+                                </p>
+                                <p>
+                                    <a href="https://www.tripadvisor.com.pe/Attraction_Review-g294316-d13448610-Reviews-Visit_South_America-Lima_Lima_Region.html" target="_blank" rel="noopener">
+                                    <span class="wprevpro_star_imgs_T1"><img class="wprevpro_t1_star_img_file aligncenter" src="https://visitsouthamerica.co/wp-content/plugins/wp-review-slider-pro-premium/public/partials/imgs/tripadvisor_stars_5.png" alt="5 star rating" data-pagespeed-url-hash="3223949194" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="tours-wrapper">
+                                <p style="text-align: center;">
+                                    <span class="sub-lb"> Dificultad </span>
+                                </p>
+                                <div class="media-heading" style="text-align: center;">
+                                    <span style="color: #000000;"> Fácil </span>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            
+
+            <!-- fin /box descrip -->  
+
             <!-- / box sinopsis -->
 
             <div class="p-4 w-100">
+                    <a id="itinerario"><p>&nbsp;</p></a>
                     <h2 class="subtitle ml-4"> Itinerario </h2> 
                     <div class="accordion" id="accordionExample">
                         <div class="card">
@@ -188,13 +253,15 @@
             </div> <!-- /Itinerario -->
 
             <div class="p-4 w-100">
-                    <h2 class="subtitle ml-4"> Incluye </h2>  
+                    <a id="incluye"><p>&nbsp;</p></a>
+                    <h2 class="subtitle ml-4">  Incluye </h2>  
                     <div class="content-list py-4">    
                         <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_incluye', true ); ?>
                     </div>
             </div> <!-- /Incluye -->
 
             <div class="p-4 w-100">
+                    <a id="no-incluye"><p>&nbsp;</p></a>
                     <h2 class="subtitle ml-4"> No Incluye </h2>  
                     <div class="content-list py-4">  
                         <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_no_incluye', true ); ?>
@@ -202,7 +269,8 @@
             </div> <!-- /no Incluye -->
 
             <div>
-                <h2 class="subtitle ml-4"> Tours similares </h2>                 
+                <a id="similares"><p>&nbsp;</p></a>
+                <h2 class="subtitle ml-4"> Tours similares </h2>         
                 <div id="tours-block-1" class="container">
                     <div class="row">
                         <?php ave_query_tours(3); ?>

@@ -17,8 +17,6 @@
 
 })( jQuery );
 
-
-
 jQuery(document).ready(function( $ ) {
 
 	// Ahora puedes usar $. Puedes comprobarlo usando la siguiente línea:

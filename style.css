@@ -816,7 +816,7 @@ section.widget{
 }
 section ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 1.25rem;
     margin: 0 0 20px 0; 
 }
 section ul li a{
@@ -912,6 +912,7 @@ footer.footer {
         text-decoration: none;
         overflow: hidden;
     }
+
 }
  
 @media (min-width: 601px) {  
@@ -1017,6 +1018,59 @@ section#tours #tours-block h2 span, section#tours #tours-block h1 span {
 .publicidad .contenido h2 {
     font-weight: 700;
     font-size: 2.4rem;
+}
+
+/** tabs  TOURS **/
+
+.box-description{
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+}
+.box-cambio{
+    width: 50%;
+}
+.box-desc{    
+    background-color: #F6F6F6;
+    border: 1px solid #DFDFDF;
+    border-top: 2px solid #005ED6;
+    margin: 1rem;
+}
+.box-desc1{    
+    background-color: #D0DAE7;
+    border: 1px solid #DFDFDF;
+    border-top: 2px solid #005ED6;
+    margin: 1rem;
+}
+.tabs-tours {
+    border: none;
+    justify-content: space-around;
+    /* display: flex; */
+    margin: 0 -10px;
+}
+.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #1a2e3c;
+    border-bottom-color: #1a2e3c;
+    cursor: default;
+    border: none;
+    border-bottom: 2px solid #1a2e3c;
+    outline: none;
+}
+
+.row-one .duration, .row-one .age {
+    font-size: 1.1rem;
+    line-height: 0.5rem;
+    padding: 2px;
+    margin-left: .5em;
+}
+.tours-wrapper{
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.tours-wrapper>p{
+    color: #9b9b9b;
+    margin-bottom: 0rem;
 }
 
 /** footer REV **/
