@@ -1083,6 +1083,25 @@ section#tours #tours-block h2 span, section#tours #tours-block h1 span {
     margin-bottom: 0rem;
 }
 
+/** ventajas competitivas **/
+
+.ve-wrapper{
+    color: #9b9b9b;
+    margin-top: 15px;
+}
+.ve-wrapper-flex{
+    display: inline-flex;
+}
+h3.wrapper{
+    color: #1a2e3c;
+    font-family: "Roboto Condensed";
+    font-size: 1rem!important;
+}
+.ve-wrapper-flex ul.ventajas{
+    text-decoration: none;
+    list-style-type: circle;
+}
+
 /** footer REV **/
 
 .dk-footer {

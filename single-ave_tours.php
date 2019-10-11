@@ -128,6 +128,30 @@
 
                             </div>
                         </div>
+
+                        <div class="ve-wrapper"> 
+                        <h3 class="wrapper text-center"> ¿Porque viajar con Go2peru? </h3>   
+
+                            <div class="ve-wrapper-flex">
+
+                                <div class="col-9 p-0">                    
+                                    <ul class="ventajas">
+                                        <li> Amplia experiencia positiva </li>
+                                        <li> Guías con amplia experiencia </li>
+                                        <li> Altos estándares de seguridad </li>
+                                        <li> Servicio personalizado </li>
+                                        <li> Sostenibilidad, minima huella</li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 p-0">
+                                    <a class="d-flex mx-auto navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
+                                    <img class="mt-3 img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/sostenible-1.png">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
                 </div>  <!-- // ?precio -->
             
                 <div class="modal fade" id="ave_Modal" tabindex="-1" role="dialog" aria-labelledby="ave_ModalLabel" aria-hidden="true">
