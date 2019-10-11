@@ -921,7 +921,10 @@ footer.footer {
     .car-pre{ /* funciona en firefox y chrome REV futura*/
         flex-flow: inherit;
     }
-
+    .car-pre>.precio{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
 }
  
 @media (min-width: 601px) {  
@@ -1044,13 +1047,11 @@ section#tours #tours-block h2 span, section#tours #tours-block h1 span {
     background-color: #F6F6F6;
     border: 1px solid #DFDFDF;
     border-top: 2px solid #005ED6;
-    margin: 1rem;
 }
 .box-desc1{    
     background-color: #D0DAE7;
     border: 1px solid #DFDFDF;
     border-top: 2px solid #005ED6;
-    margin: 1rem;
 }
 .tabs-tours {
     border: none;

@@ -24,7 +24,7 @@
 
     <div class="container tours-wrap">
 
-        <div class="row mt-2" style="outline:2px solid PERU;">
+        <div class="row mt-2">
 
         <!-- //! bloque #1 // breadscrumb -->
             <div class="col-12">
@@ -43,7 +43,7 @@
         
         <!-- //! bloque #2 // title -->
 
-            <div class="col-12 mb-2" style="outline:2px solid PERU;">
+            <div class="col-12 mb-2">
                     
                 <h1 class="section-heading mt-2 text-center"> <?php the_title(); ?> </h1>           
                 <!-- / titulo --> 
@@ -53,9 +53,9 @@
         <!-- //! /bloque #2 // title -->
 
         <!-- //! bloque #3 // carousel - precio -->
-        <div class="col-12 d-inline-flex flex-row car-pre" style="background-color: DEEPPINK;">
+        <div class="col-12 d-inline-flex flex-row car-pre mb-2">
             
-                <div class="col-xs-12 col-sm-8 col-lg-8 p-0" style="outline:2px solid FIREBRICK;">
+                <div class="col-xs-12 col-sm-8 col-lg-8 p-0">
                 <?php
                     function cmb2_output_file_list( $file_list_meta_key, $img_size = '' ) {
                         $files = get_post_meta( get_the_ID(), $file_list_meta_key, 1 );
@@ -94,7 +94,7 @@
 
                 </div> <!-- // ?carousel -->
 
-                <div class="col-xs-12 col-sm-4 col-lg-4 pr-0" style="outline:2px solid KHAKI;">
+                <div class="col-xs-12 col-sm-4 col-lg-4 pr-0 precio">
                         <div class="price-block has-price">
                             <div class="px-2 activity-features-price top-border-highlight">
 
@@ -130,6 +130,26 @@
                         </div>
                 </div>  <!-- // ?precio -->
             
+                <div class="modal fade" id="ave_Modal" tabindex="-1" role="dialog" aria-labelledby="ave_ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ave_ModalLabel"> Solicite (Enquire now) </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                
+                                <?php echo do_shortcode( '[contact-form-7 id="153" title="Formulario de contacto 1"]' ); ?>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- // ?modal -->
+
             <!-- /carousel - precio -->
             
         </div>
@@ -137,15 +157,73 @@
         <!-- //! /bloque #3 //  carousel - precio -->
 
         <!-- //! bloque #4 // descripcion -->
-        <div class="col-12" style="outline:2px solid FIREBRICK;">
+        <div class="col-12 d-inline-flex flex-row car-pre">
     
-            dscripcion
+            <div class="col-xs-12 col-md-6 box-desc py-3">  
+                <ul class="nav nav-tabs tabs-tours">
+                    <li class="active">
+                        <a href="#itinerario">
+                        <span> ITINERARIO </span></a>
+                    </li>
+                    <li>
+                        <a href="#incluye"> 
+                        <span> INCLUYE </span></a>
+                    </li>
+                    <li>
+                        <a href="#no-incluye">
+                        <span> NO INCLUYE </span></a>
+                    </li>
+                    <li>
+                        <a href="#similares">
+                        <span> TOURS SIMILARES </span></a>
+                    </li>
+                </ul>
+            </div> <!-- // ?itinerario -->
+            
+            <div class="col-xs-12 col-md-6 box-desc1 py-3"> 
+                    <div class="row-one d-flex justify-content-around">
+                            <div class="tours-wrapper">
+                                <p style="text-align: center;">
+                                    <span class="sub-lb"> Duración </span>
+                                </p>
+                                <div class="media-heading" style="text-align: center;">
+                                    <span style="color: #000000;">4 Days</span>
+                                </div> 
+                            </div>
+                            <div class="tours-wrapper">
+                                <p style="text-align: center;">
+                                    <span class="sub-lb"> Tipo tour </span>
+                                </p>
+                                <div class="media-heading" style="text-align: center;">
+                                    <span style="color: #000000;"> Hiking </span>
+                                </div>
+                            </div>
+                            <div class="tours-wrapper">
+                                <p style="text-align: center;">
+                                    <span class="sub-lb"> Ratings </span>
+                                </p>
+                                <p>
+                                    <a href="https://www.tripadvisor.com.pe/Attraction_Review-g294316-d13448610-Reviews-Visit_South_America-Lima_Lima_Region.html" target="_blank" rel="noopener">
+                                    <span class="wprevpro_star_imgs_T1"><img class="wprevpro_t1_star_img_file aligncenter" src="https://visitsouthamerica.co/wp-content/plugins/wp-review-slider-pro-premium/public/partials/imgs/tripadvisor_stars_5.png" alt="5 star rating" data-pagespeed-url-hash="3223949194" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></span>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="tours-wrapper">
+                                <p style="text-align: center;">
+                                    <span class="sub-lb"> Dificultad </span>
+                                </p>
+                                <div class="media-heading" style="text-align: center;">
+                                    <span style="color: #000000;"> Fácil </span>
+                                </div>
+                            </div>
+                    </div>
+            </div> <!-- // ?descripcion -->
 
         </div>
         <!-- //! /bloque ##4 // descripcion -->
 
         <!-- //! bloque #5 // itinerario - incluye -->
-        <div class="col-12" style="outline:2px solid TEAL;">
+        <div class="col-12">
             
             <div class="w-100">
                     <a id="itinerario"><p>&nbsp;</p></a>
