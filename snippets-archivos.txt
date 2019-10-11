@@ -10,3 +10,14 @@ single-ave_tours.php ------------------------>                      |           
 queries.php     ----------------------------->                      |               >   trip destacados
 
 page_tours.php
+
+
+
+<!-- 
+* alert
+* ! Deprecated
+* ?
+*
+* @param 
+* TODO: create
+-->
