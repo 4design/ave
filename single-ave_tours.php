@@ -53,11 +53,85 @@
         <!-- //! /bloque #2 // title -->
 
         <!-- //! bloque #3 // carousel - precio -->
-        <div class="col-12" style="outline:2px solid FIREBRICK;">
+        <div class="col-12 d-inline-flex flex-row car-pre" style="background-color: DEEPPINK;">
             
-            carousel - precio
+                <div class="col-xs-12 col-sm-8 col-lg-8 p-0" style="outline:2px solid FIREBRICK;">
+                <?php
+                    function cmb2_output_file_list( $file_list_meta_key, $img_size = '' ) {
+                        $files = get_post_meta( get_the_ID(), $file_list_meta_key, 1 );
 
+                        if ($files) { // if there are images attached to posting, start the flexslider markup
 
+                            echo '<div class="flexslider">';
+                            echo '<ul class="slides">';
+                            
+                            $counter = 0;
+                            foreach ( (array) $files as $attachment_id => $attachment_url ) {
+
+                                $args = array();
+                                if ( 0 === $counter ) {
+                                    $args = array(
+                                        //'alt'   => '',
+                                        //'class' => '',
+                                        );
+                                }
+                                echo '<li>';
+                                echo wp_get_attachment_image( $attachment_id, $img_size, false );
+                                echo '</li>';
+
+                                $counter++;
+
+                            }
+                            
+                            echo '</ul>';
+                            echo '</div>';
+                        }};
+                        ?>
+
+                        <?php cmb2_output_file_list( 'title_tours_imagenes_filelist', 'mediano-1' ); ?>
+                        <!-- <?php echo get_post_meta( get_the_ID(), 'title_tours_imagenes_filelist', true ); ?>
+                        <?php the_post_thumbnail('mediano-1') ?> -->
+
+                </div> <!-- // ?carousel -->
+
+                <div class="col-xs-12 col-sm-4 col-lg-4 pr-0" style="outline:2px solid KHAKI;">
+                        <div class="price-block has-price">
+                            <div class="px-2 activity-features-price top-border-highlight">
+
+                                <?php
+                                    $costo = get_post_meta(get_the_ID(), 'ave_tours_precio_money_adulto', true); 
+                                ?> 
+                                <p class="price"> 
+                                    <span class="price-from">desde</span> 
+                                    <strong class="price-actual">US 
+                                        <?php echo asDollars($costo); ?>
+                                    </strong>
+                                    <span class="price-explanation">por persona</span>
+                                </p>
+                                <div class="priceBook col-md-12 btn btn-primary"> 
+                                    <a class="text-light" href="#">  Reserve  </a> 
+                                </div>
+
+                            <!-- inicio box cards -->
+                                <div class="d-flex w-100 bg-white">    
+                                    <a class="d-flex mx-auto navbar-brand" href="<?php echo esc_url(home_url('/'));?>'">
+                                        <img class="mt-3 img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/cards-150x150.jpg">
+                                    </a>
+                                </div>
+                            <!-- fin box cards -->
+
+                            <!-- inicio box form -->
+                                <div class="mt-3 col-md-12 btn btn-primary" data-toggle="modal" data-target="#ave_Modal"> 
+                                    <a class="text-light" href="#">  Solicite  </a> 
+                                </div>
+                            <!-- fin box form -->
+
+                            </div>
+                        </div>
+                </div>  <!-- // ?precio -->
+            
+            <!-- /carousel - precio -->
+            
         </div>
 
         <!-- //! /bloque #3 //  carousel - precio -->
@@ -73,7 +147,7 @@
         <!-- //! bloque #5 // itinerario - incluye -->
         <div class="col-12" style="outline:2px solid TEAL;">
             
-            <div class="p-4 w-100">
+            <div class="w-100">
                     <a id="itinerario"><p>&nbsp;</p></a>
                     <h2 class="subtitle ml-4"> Itinerario </h2> 
                     <div class="accordion" id="accordionExample">
@@ -83,7 +157,7 @@
                     </div>  
             </div> <!-- /Itinerario -->
 
-            <div class="p-4 w-100">
+            <div class="w-100">
                     <a id="incluye"><p>&nbsp;</p></a>
                     <h2 class="subtitle ml-4">  Incluye </h2>  
                     <div class="content-list py-4">    
@@ -91,7 +165,7 @@
                     </div>
             </div> <!-- /Incluye -->
 
-            <div class="p-4 w-100">
+            <div class="w-100">
                     <a id="no-incluye"><p>&nbsp;</p></a>
                     <h2 class="subtitle ml-4"> No Incluye </h2>  
                     <div class="content-list py-4">  
@@ -122,7 +196,6 @@
 <section class="call-to-action suscribe-em text-white text-center" 
     style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/bg-masthead.jpg)">
  
-
         <div class="overlay"></div>
         <div class="container">
             <div class="row">

@@ -515,9 +515,16 @@ p.parrafo {
     padding-bottom: 1rem;
 }
 
+/* flexslider */
+
+.flexslider { /* REV -- retirar si flexslider usa thumb */
+    margin: 0 0 2px !important;
+}
+
+
 /* carousel */
 
-.albery-container, 
+/* .albery-container, 
 .pagination-container {
     position: relative;
     width: 700px;
@@ -533,11 +540,11 @@ p.parrafo {
     position: relative;
     float: left;
     width: 400px;
-    /*cursor: zoom-in;*/
+    /*cursor: zoom-in;
 }
 .albery-item img {
     width: 100%;
-}
+} */
 
 .move-left, .move-right {
     position: absolute;
@@ -778,7 +785,7 @@ h2.blog-title-list a:hover , .read-more:hover{
 }
 
 
-/* suscribe*/
+/* subscribe*/
 
 
 h3.yikes-mailchimp-form-title, span.EMAIL-label{
@@ -802,7 +809,6 @@ h3.yikes-mailchimp-form-title, span.EMAIL-label{
     border: 0px solid rgba(51,51,51,.1)!important;
 
 }
-
 
 
 /* sidebar*/
@@ -911,6 +917,9 @@ footer.footer {
         line-height: .2em;
         text-decoration: none;
         overflow: hidden;
+    }
+    .car-pre{ /* funciona en firefox y chrome REV futura*/
+        flex-flow: inherit;
     }
 
 }
