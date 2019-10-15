@@ -1,6 +1,5 @@
 <?php 
 /*
-* Template name: Info
 */
 get_header(); ?>
 
