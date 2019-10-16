@@ -13,7 +13,16 @@ Text Domain: ave
 Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, translation-ready
 
 @mediaqueries #690
-
+@@colores
+@@ -primary     #007BFF (cyan)
+@@ -secondary   #6C757D (dark)
+@@ -success     #28A745 (verde)
+@@ -info        #17A2B8 (esmeralda)
+@@ -warning     #FFC107 (amarillo ocre)
+@@ -danger      #DC3545 (rojo vino)
+@@ -light       #fff (blanco)
+@@ -dark        #343A40 (re Oscuro)  
+@@
 */
 
 
@@ -803,7 +812,6 @@ img[class*="wp-image-2"]{ /* controla promociones IMG */
     max-width: 100%;
     height: auto;
     margin: 10px;
-
 }
 
 /* subscribe*/
