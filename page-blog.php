@@ -14,7 +14,7 @@
 
         <div class="row mt-4">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"> <?php the_title(); ?> </h2>
+                    <h1 class="section-heading"> <?php the_title(); ?> </h1>
                 </div>
         </div>
 

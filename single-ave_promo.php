@@ -24,11 +24,14 @@
             <!-- //! fin breadcrumb -->
 
             <!-- //! post title -->
-            
-            <div class="">
-                    <h1 class="" style="">
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-                    </h1>
+
+            <div class="col-12 mb-2">
+                    
+                <h1 class="section-heading mt-2 text-center"> 
+                    <?php the_title(); ?>
+                </h1>           
+                <!-- / titulo --> 
+
             </div>
         
             <!--//! /post title --> 
@@ -41,7 +44,9 @@
                 <div class="row promo">
 
                 <div class="col-12 item">
-                    <?php the_content(); // Dynamic Content ?>
+                    <div class="view">
+                        <?php the_content(); // Dynamic Content ?>
+                    </div>
                 </div>
 
 

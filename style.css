@@ -693,7 +693,7 @@ h2.subtitle{
     cursor: default;
 }
 .view img {
-    outline: 1px solid LIMEGREEN;
+    /* outline: 0px solid LIMEGREEN; */
     display: block;
     position: relative;
 } 
@@ -794,7 +794,10 @@ h2.blog-title-list a:hover , .read-more:hover{
     display: inline-flex;
     padding: 0px;
 }
-img[class*="wp-image-266"]{
+.promo .item p a{
+    margin: 10px;
+}
+img[class*="wp-image-2"]{ /* controla promociones IMG */
     /* width: 100%; */
     display: flex;
     max-width: 100%;
