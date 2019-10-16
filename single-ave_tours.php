@@ -121,7 +121,7 @@
                             <!-- fin box cards -->
 
                             <!-- inicio box form -->
-                                <div class="mt-3 col-md-12 btn btn-primary" data-toggle="modal" data-target="#ave_Modal"> 
+                                <div class="mt-3 col-md-12 btn btn-success" data-toggle="modal" data-target="#ave_Modal"> 
                                     <a class="text-light" href="#">  Solicite  </a> 
                                 </div>
                             <!-- fin box form -->
