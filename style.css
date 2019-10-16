@@ -710,7 +710,7 @@ h2.subtitle{
 /* blog */
 
 .blog-article{
-    outline:1px solid #DBDBDB;
+    outline:0px solid #DBDBDB;
 }
 .post-thumbnail{
     position: relative;
@@ -789,6 +789,19 @@ h2.blog-title-list a:hover , .read-more:hover{
     color:#B92C4C;
 }
 
+/* promo */
+.promo .item p{
+    display: inline-flex;
+    padding: 0px;
+}
+img[class*="wp-image-266"]{
+    /* width: 100%; */
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+
+}
 
 /* subscribe*/
 
@@ -878,6 +891,21 @@ footer.footer {
 /** mediaqueries **/
 
 @media (max-width: 360px) {  
+
+    .container-360 {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .img-360{
+        padding: 1rem!important;
+    }
+    .container-360 img{
+        height: 300px;
+        background-size: cover;
+    }
  
     .call-to-action {
         position: relative;
@@ -901,7 +929,37 @@ footer.footer {
         text-decoration: none;
     }
 
+}
 
+@media (max-width: 375px), (max-width: 575px) {  
+    .container-360 {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .img-360{
+        padding: 1rem!important;
+    }
+    .container-360 img{
+        height: 300px;
+        background-size: cover;
+    }
+    .promo .item p{
+        display: block;
+        padding: 10px;
+    }
+    .promo .item p{
+        display: contents;
+        padding: 0px;
+    }
+    img[class*="wp-image-2"] {
+        max-width: 100%;
+        height: auto; 
+        margin-bottom:5px;
+
+    }
 }
  
 

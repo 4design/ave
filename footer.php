@@ -99,13 +99,11 @@
                                         <h3> Enlaces importantes</h3>
                                         <span class="animate-border border-black"></span>
                                     </div>
-                                    <ul class="list-inline mb-2">
-                                        <li class="list-inline-item"><a href="nosotros">Nosotros</a></li>  
-                                        <li class="list-inline-item"><a href="Sitemap">Sitemap</a></li>
-                                        <li class="list-inline-item"><a href="contacto">Contacto</a></li>  
-                                        <li class="list-inline-item"><a href="terminos-de-uso">Terminos de uso</a></li>
-                                        <li class="list-inline-item"><a href="politica-de-privacidad">Politica de Privacidad</a></li>
-                                    </ul>
+                                    <div>
+                                        
+                                        <?php wp_nav_menu( array( 'theme_location' => 'menu_footer', 'container_class' => 'list-inline mb-4' ) ); ?>
+
+                                    </div>
 
                                 </div>
                                 <!-- fin col2-fila2 Footer  -->

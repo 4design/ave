@@ -4,7 +4,7 @@
 get_header(); ?>
 
 
-<h1> PAGE.php</h1>
+<!-- <h1> PAGE.php</h1> -->
 
 
 <section id="blog-article">
