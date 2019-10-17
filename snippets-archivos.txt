@@ -6,6 +6,8 @@ frontpage.php   ----------------------------->                      |           
 header.php      ----------------------------->                      |               >   header
 footer.php      ----------------------------->                      |               >   footer
 single-ave_tours.php ------------------------>                      |               >   detalle tours
+single-ave_promo.php ------------------------>                      |               >   promociones
+single-ave_contact.php ---------------------->                      |               >   contacto
 
 queries.php     ----------------------------->                      |               >   trip destacados
 

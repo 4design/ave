@@ -1426,3 +1426,63 @@ footer#foot-data #bottom #social {
 .wpcf7 input:active[type="submit"] {
     background: #000000;
 } */
+
+
+/*
+Formulario CF7 a 2 columnas responsive
+*/
+#responsive-form{
+ /* max-width:600px; -- change this to get your desired form width -- */
+ margin:0 auto;
+ width:100%;
+}
+.form-row{
+ width: 100%;
+}
+.column-half, .column-full{
+ float: left;
+ position: relative;
+ padding: 0.4rem;
+ width:100%;
+ -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+}
+.clearfix:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+ 
+/**---------------- Media query ----------------**/
+@media only screen and (min-width: 48em) { 
+ .column-half{
+ width: 50%;
+ }
+}
+
+/* contact */
+.bg-dark-contact{
+    background-color: #ccc;
+}
+
+address.sidebar{
+    margin-top: 30px;
+}
+address.siderbar>div{
+    padding: 10px;
+}
+address div.contact-phone{
+    padding: 10px 0px;
+}
+div.fondoIMG{
+    background-position: 50%;
+    background: url(image.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50%;
+    width:100%;
+    padding: 20px;
+}

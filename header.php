@@ -85,7 +85,7 @@
                                     <li id="menu-item-32434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32434">
                                         <span class="h-icon wpml-ls-native icl_lang_sel_native">
                                             <i class="fab fa-whatsapp"></i> </span>
-                                        <a href="tel:+511993502909" class="wpml-ls-link">
+                                        <a href="tel:+51 990 500 909" class="wpml-ls-link">
                                             <span class="wpml-ls-native icl_lang_sel_native"> +51 999 299 299 </span> </a>
                                     </li>
 
