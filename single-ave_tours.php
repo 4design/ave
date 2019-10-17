@@ -122,7 +122,7 @@
 
                             <!-- inicio box form -->
                                 <div class="mt-3 col-md-12 btn btn-success" data-toggle="modal" data-target="#ave_Modal"> 
-                                    <a class="text-light" href="#">  Solicite  </a> 
+                                    <a class="text-light" href="#">  Solicite información  </a> 
                                 </div>
                             <!-- fin box form -->
 
@@ -159,14 +159,14 @@
                         <div class="modal-content">
 
                             <div class="modal-header">
-                                <h5 class="modal-title" id="ave_ModalLabel"> Solicite (Enquire now) </h5>
+                                <h5 class="modal-title" id="ave_ModalLabel"> Reserva tu aventura (Enquire now) </h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                
-                                <?php echo do_shortcode( '[contact-form-7 id="153" title="Formulario de contacto 1"]' ); ?>
+                                                                
+                                <?php echo do_shortcode( '[contact-form-7 id="294" title="Formulario"]' ); ?>
                                 
                             </div>
 

@@ -1401,3 +1401,28 @@ footer#foot-data #bottom #social {
     width: 3.6rem;
     z-index: 10;
 }
+
+
+/* form */
+
+/* Contact Form 7 Submit Button 
+ -------------------------------*/
+ /* .wpcf7 input[type="submit"] {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    background: #E2272E;
+    padding: 15px 25px 15px 25px;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.wpcf7 input:hover[type="submit"] {
+    background: #494949;
+    transition: all 0.4s ease 0s;
+}
+.wpcf7 input:active[type="submit"] {
+    background: #000000;
+} */
