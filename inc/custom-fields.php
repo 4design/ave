@@ -153,6 +153,57 @@ function ave_campos_tours() {
 		// 'protocols' => array('http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet'), // Array of allowed protocols
 		// 'repeatable' => true,
 	) );
+
+	$ave_campos_tours->add_field( array(
+		'name'     => esc_html__( 'TIPO DE TOURS', 'cmb2' ),
+		'desc'     => esc_html__( ' ', 'cmb2' ),
+		'id'       => $prefix . 'title_tipo_tours',
+		'type'     => 'title',
+		'on_front' => false,
+	) );
+	
+	$ave_campos_tours->add_field( array(
+		'name'             => esc_html__( 'select_tipo_tours', 'cmb2' ),
+		'desc'             => esc_html__( 'Seleccionar el tipo de tours (opcional)', 'cmb2' ),
+		'id'               => $prefix . 'select_tipo_tours',
+		'type'             => 'select',
+		'show_option_none' => true,
+		'options'          => array(
+			'Aventura' => esc_html__( 'Aventura', 'cmb2' ),
+			'Hikking'   => esc_html__( 'Hikking', 'cmb2' ),
+			'Historia'     => esc_html__( 'Historia', 'cmb2' ),
+			'Living Culture'     => esc_html__( 'Living Culture', 'cmb2' ),
+			'Eco-Travel'     => esc_html__( 'Eco-Travel', 'cmb2' ),
+			'Mistico'     => esc_html__( 'Mistico', 'cmb2' ),
+			'Birdwatching'     => esc_html__( 'Birdwatching', 'cmb2' ),
+		),
+	) );
+
+	$ave_campos_tours->add_field( array(
+		'name'     => esc_html__( 'DIFICULTAD', 'cmb2' ),
+		'desc'     => esc_html__( ' ', 'cmb2' ),
+		'id'       => $prefix . 'title_tours_difficulty',
+		'type'     => 'title',
+		'on_front' => false,
+	) );
+	
+	$ave_campos_tours->add_field( array(
+		'name'             => esc_html__( 'select_tours_difficulty', 'cmb2' ),
+		'desc'             => esc_html__( 'Seleccionar el tipo de dificultad (Facil| Regular | Intermedio | Moderado | Dificil)', 'cmb2' ),
+		'id'               => $prefix . 'select_tours_difficulty',
+		'type'             => 'select',
+		'show_option_none' => true,
+		'options'          => array(
+			'Facil' => esc_html__( 'Facil', 'cmb2' ),
+			'Regular'   => esc_html__( 'Regular', 'cmb2' ),
+			'Intermedio'     => esc_html__( 'Intermedio', 'cmb2' ),
+			'Moderado'     => esc_html__( 'Moderado', 'cmb2' ),
+			'Dificil'     => esc_html__( 'Dificil', 'cmb2' ),
+
+		),
+	) );
+
+
 	$ave_campos_tours->add_field( array(
 		'name'     => esc_html__( 'ITINERARIO', 'cmb2' ),
 		'desc'     => esc_html__( ' ', 'cmb2' ),
@@ -221,6 +272,7 @@ function ave_campos_tours() {
 			'textarea_rows' => 5,
 		),
 	) );
+	
 	$ave_campos_tours->add_field( array(
 		'name'     => esc_html__( 'IMAGENES', 'cmb2' ),
 		'desc'     => esc_html__( ' ', 'cmb2' ),
@@ -245,6 +297,7 @@ function ave_campos_tours() {
 			'remove_text' => 'Replacement', // default: "Remove"
 		),
 	) );
+
 
 	// prueba
 	

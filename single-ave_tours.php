@@ -9,7 +9,7 @@
 
 <!-- <section class="clases mt-5 py-5">
 
-        <?php /*printf('<pre>%s</pre>', var_export(get_post_custom(get_the_ID()), true) );*/ ?> 
+        <?php printf('<pre>%s</pre>', var_export(get_post_custom(get_the_ID()), true) ); ?> 
 
 </section> -->
 
@@ -211,7 +211,9 @@
                                     <span class="sub-lb"> Duración </span>
                                 </p>
                                 <div class="media-heading" style="text-align: center;">
-                                    <span style="color: #000000;">4 Days</span>
+                                    <span style="color: #000000;">
+                                    <?php echo get_post_meta( get_the_ID(), 'ave_tours_text_dias_noches', true ); ?>
+                                    </span>
                                 </div> 
                             </div>
                             <div class="tours-wrapper">
@@ -219,7 +221,9 @@
                                     <span class="sub-lb"> Tipo tour </span>
                                 </p>
                                 <div class="media-heading" style="text-align: center;">
-                                    <span style="color: #000000;"> Hiking </span>
+                                    <span style="color: #000000;"> 
+                                    <?php echo get_post_meta( get_the_ID(), 'ave_tours_select_tipo_tours', true ); ?>
+                                </span>
                                 </div>
                             </div>
                             <div class="tours-wrapper">
@@ -237,7 +241,9 @@
                                     <span class="sub-lb"> Dificultad </span>
                                 </p>
                                 <div class="media-heading" style="text-align: center;">
-                                    <span style="color: #000000;"> Fácil </span>
+                                    <span style="color: #000000;"> 
+                                    <?php echo get_post_meta( get_the_ID(), 'ave_tours_select_tours_difficulty', true ); ?>
+                                    </span>
                                 </div>
                             </div>
                     </div>
@@ -274,6 +280,14 @@
                         <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_no_incluye', true ); ?>
                     </div> 
             </div> <!-- /no Incluye -->
+
+            <div class="w-100">
+                    <a id="info-Condiciones"><p>&nbsp;</p></a>
+                    <h2 class="subtitle ml-4"> Información - Condiciones </h2>  
+                    <div class="content-list d-inline-block py-4">  
+                        <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_condiciones', true ); ?>
+                    </div> 
+            </div> <!-- / Informacion Relevante -->
 
             <div>
                 <a id="similares"><p>&nbsp;</p></a>

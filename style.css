@@ -676,8 +676,11 @@ p.parrafo {
     cursor: pointer;
     width: 100%;
     border-radius: 4px;
-    display: flex;
+    /* display: flex; */
     background: #fff;
+}
+.content-list h4.panel-title{
+    padding: 5px 25px;
 }
 
 /*  descripcion  */
