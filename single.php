@@ -32,7 +32,7 @@
                     <!-- //! post title -->
                     
                     <div class="blog-title">
-                            <h1 class="" style="">
+                            <h1 class="text-white" style="color:#fff;">
                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                             </h1>
                     </div>
