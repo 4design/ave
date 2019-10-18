@@ -55,11 +55,9 @@
         
                 <?php the_content(); // Dynamic Content ?>
 
-                <!-- SE VA -->
+                
                 <?php the_tags( __( 'Tags: ', 'ave' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-                <p><?php _e( 'This post was written by ', 'ave' ); the_author(); ?></p>
-                <?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-                <!-- <?php comments_template(); ?> -->
+
         
             </div>
 

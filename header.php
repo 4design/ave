@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title> Avr </title>
+<title> <?php the_title(); ?> </title>
 
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
