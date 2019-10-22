@@ -8,9 +8,9 @@
 
         <div class="row py-2 justify-content-center">
                 <div class="phoneContainer">
-                    <a href="tel:+51989166527">
+                    <a href="tel:+51 985 687 180">
                         <i class="fab fa-whatsapp" aria-hidden="true"></i> 
-                        <span class="">+51 999 999 999</span>
+                        <span class="">+51 985 687 180</span>
                     </a>
                 </div>
         </div>
@@ -33,7 +33,7 @@
                                 <ul class="">
                                     <li>
                                         <i class="far fa-envelope" aria-hidden="true"></i> 
-                                        <span class="ml-2"> info@go2peru.travel</span>
+                                        <span class="ml-2"> reservas@aventurasalsur.com </span>
                                     </li>
                                     <li>
                                         <i class="fas fa-map-marker-alt"></i>

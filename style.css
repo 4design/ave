@@ -862,7 +862,7 @@ section.widget{
     padding-left: 25px;
 }
 section ul {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0 1.25rem;
     margin: 0 0 20px 0; 
 }
