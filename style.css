@@ -768,7 +768,7 @@ h2.subtitle{
     line-height: .8em;
     text-decoration: none;
     color: white;
-    text-shadow: 2px 2px 4px #888;
+    text-shadow: 2px 2px 4px #000;
 
 }
 .blog-meta {

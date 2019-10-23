@@ -268,7 +268,7 @@
             <div class="w-100">
                     <a id="incluye"><p>&nbsp;</p></a>
                     <h2 class="subtitle ml-4">  Incluye </h2>  
-                    <div class="content-list py-4">    
+                    <div class="card-body content-list py-4">    
                         <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_incluye', true ); ?>
                     </div>
             </div> <!-- /Incluye -->
@@ -276,7 +276,7 @@
             <div class="w-100">
                     <a id="no-incluye"><p>&nbsp;</p></a>
                     <h2 class="subtitle ml-4"> No Incluye </h2>  
-                    <div class="content-list py-4">  
+                    <div class="card-body content-list py-4">  
                         <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_no_incluye', true ); ?>
                     </div> 
             </div> <!-- /no Incluye -->
@@ -284,7 +284,7 @@
             <div class="w-100">
                     <a id="info-Condiciones"><p>&nbsp;</p></a>
                     <h2 class="subtitle ml-4"> Información - Condiciones </h2>  
-                    <div class="content-list d-inline-block py-4">  
+                    <div class="card-body content-list d-inline-block py-4">  
                         <?php echo get_post_meta( get_the_ID(), 'ave_tours_tours_condiciones', true ); ?>
                     </div> 
             </div> <!-- / Informacion Relevante -->
