@@ -13,8 +13,8 @@
         <div class="row">
             <div class="slider-masthead" >
  
-            <?php add_revslider('av-slider','homepage'); ?>
-
+            <?php add_revslider('av-slider-1','homepage'); ?>
+            
             </div>
 
 <!--             <div class="col-lg-10 mx-auto">
